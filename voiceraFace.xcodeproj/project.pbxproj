@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		02617FC42D2351BC00275543 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02617FA22D2351BA00275543 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02617FA92D2351BA00275543;
+			remoteInfo = voiceraFace;
+		};
+		02617FCE2D2351BC00275543 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02617FA22D2351BA00275543 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02617FA92D2351BA00275543;
+			remoteInfo = voiceraFace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02617FAA2D2351BA00275543 /* voiceraFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voiceraFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02617FC32D2351BC00275543 /* voiceraFaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voiceraFaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02617FCD2D2351BC00275543 /* voiceraFaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voiceraFaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0261800D2D23541700275543 /* Exceptions for "voiceraFace" folder in "voiceraFaceTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				FaceMoustacheSetView/View/CollectionViewCells/FaceEditorCollectionViewCell.swift,
+				FaceMoustacheSetView/View/CollectionViewCells/FaceEditorCollectionViewCell.xib,
+				FaceMoustacheSetView/View/FaceEditorViewController.swift,
+				FaceMoustacheSetView/View/FaceEditorViewController.xib,
+				Main.storyboard,
+			);
+			target = 02617FC22D2351BC00275543 /* voiceraFaceTests */;
+		};
+		0261800E2D23541700275543 /* Exceptions for "voiceraFace" folder in "voiceraFaceUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				FaceMoustacheSetView/View/CollectionViewCells/FaceEditorCollectionViewCell.swift,
+				FaceMoustacheSetView/View/CollectionViewCells/FaceEditorCollectionViewCell.xib,
+				FaceMoustacheSetView/View/FaceEditorViewController.swift,
+				FaceMoustacheSetView/View/FaceEditorViewController.xib,
+				Main.storyboard,
+			);
+			target = 02617FCC2D2351BC00275543 /* voiceraFaceUITests */;
+		};
+		026180192D2354FC00275543 /* Exceptions for "voiceraFace" folder in "voiceraFace" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 02617FA92D2351BA00275543 /* voiceraFace */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		02617FAC2D2351BA00275543 /* voiceraFace */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				026180192D2354FC00275543 /* Exceptions for "voiceraFace" folder in "voiceraFace" target */,
+				0261800D2D23541700275543 /* Exceptions for "voiceraFace" folder in "voiceraFaceTests" target */,
+				0261800E2D23541700275543 /* Exceptions for "voiceraFace" folder in "voiceraFaceUITests" target */,
+			);
+			path = voiceraFace;
+			sourceTree = "<group>";
+		};
+		02617FC62D2351BC00275543 /* voiceraFaceTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = voiceraFaceTests;
+			sourceTree = "<group>";
+		};
+		02617FD02D2351BC00275543 /* voiceraFaceUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = voiceraFaceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02617FA72D2351BA00275543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02617FC02D2351BC00275543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02617FCA2D2351BC00275543 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02617FA12D2351BA00275543 = {
+			isa = PBXGroup;
+			children = (
+				02617FAC2D2351BA00275543 /* voiceraFace */,
+				02617FC62D2351BC00275543 /* voiceraFaceTests */,
+				02617FD02D2351BC00275543 /* voiceraFaceUITests */,
+				02617FAB2D2351BA00275543 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02617FAB2D2351BA00275543 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02617FAA2D2351BA00275543 /* voiceraFace.app */,
+				02617FC32D2351BC00275543 /* voiceraFaceTests.xctest */,
+				02617FCD2D2351BC00275543 /* voiceraFaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02617FA92D2351BA00275543 /* voiceraFace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02617FD62D2351BC00275543 /* Build configuration list for PBXNativeTarget "voiceraFace" */;
+			buildPhases = (
+				02617FA62D2351BA00275543 /* Sources */,
+				02617FA72D2351BA00275543 /* Frameworks */,
+				02617FA82D2351BA00275543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				02617FAC2D2351BA00275543 /* voiceraFace */,
+			);
+			name = voiceraFace;
+			packageProductDependencies = (
+			);
+			productName = voiceraFace;
+			productReference = 02617FAA2D2351BA00275543 /* voiceraFace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02617FC22D2351BC00275543 /* voiceraFaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02617FDB2D2351BC00275543 /* Build configuration list for PBXNativeTarget "voiceraFaceTests" */;
+			buildPhases = (
+				02617FBF2D2351BC00275543 /* Sources */,
+				02617FC02D2351BC00275543 /* Frameworks */,
+				02617FC12D2351BC00275543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02617FC52D2351BC00275543 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				02617FC62D2351BC00275543 /* voiceraFaceTests */,
+			);
+			name = voiceraFaceTests;
+			packageProductDependencies = (
+			);
+			productName = voiceraFaceTests;
+			productReference = 02617FC32D2351BC00275543 /* voiceraFaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02617FCC2D2351BC00275543 /* voiceraFaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02617FDE2D2351BC00275543 /* Build configuration list for PBXNativeTarget "voiceraFaceUITests" */;
+			buildPhases = (
+				02617FC92D2351BC00275543 /* Sources */,
+				02617FCA2D2351BC00275543 /* Frameworks */,
+				02617FCB2D2351BC00275543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02617FCF2D2351BC00275543 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				02617FD02D2351BC00275543 /* voiceraFaceUITests */,
+			);
+			name = voiceraFaceUITests;
+			packageProductDependencies = (
+			);
+			productName = voiceraFaceUITests;
+			productReference = 02617FCD2D2351BC00275543 /* voiceraFaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02617FA22D2351BA00275543 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					02617FA92D2351BA00275543 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					02617FC22D2351BC00275543 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 02617FA92D2351BA00275543;
+					};
+					02617FCC2D2351BC00275543 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 02617FA92D2351BA00275543;
+					};
+				};
+			};
+			buildConfigurationList = 02617FA52D2351BA00275543 /* Build configuration list for PBXProject "voiceraFace" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02617FA12D2351BA00275543;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 02617FAB2D2351BA00275543 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02617FA92D2351BA00275543 /* voiceraFace */,
+				02617FC22D2351BC00275543 /* voiceraFaceTests */,
+				02617FCC2D2351BC00275543 /* voiceraFaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02617FA82D2351BA00275543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02617FC12D2351BC00275543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02617FCB2D2351BC00275543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02617FA62D2351BA00275543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02617FBF2D2351BC00275543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02617FC92D2351BC00275543 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02617FC52D2351BC00275543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02617FA92D2351BA00275543 /* voiceraFace */;
+			targetProxy = 02617FC42D2351BC00275543 /* PBXContainerItemProxy */;
+		};
+		02617FCF2D2351BC00275543 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02617FA92D2351BA00275543 /* voiceraFace */;
+			targetProxy = 02617FCE2D2351BC00275543 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02617FD72D2351BC00275543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y46Q2D58D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = voiceraFace/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicera.voiceraFace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02617FD82D2351BC00275543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y46Q2D58D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = voiceraFace/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicera.voiceraFace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		02617FD92D2351BC00275543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02617FDA2D2351BC00275543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02617FDC2D2351BC00275543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y46Q2D58D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicera.voiceraFaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/voiceraFace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/voiceraFace";
+			};
+			name = Debug;
+		};
+		02617FDD2D2351BC00275543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y46Q2D58D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicera.voiceraFaceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/voiceraFace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/voiceraFace";
+			};
+			name = Release;
+		};
+		02617FDF2D2351BC00275543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y46Q2D58D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicera.voiceraFaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = voiceraFace;
+			};
+			name = Debug;
+		};
+		02617FE02D2351BC00275543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y46Q2D58D9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicera.voiceraFaceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = voiceraFace;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02617FA52D2351BA00275543 /* Build configuration list for PBXProject "voiceraFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02617FD92D2351BC00275543 /* Debug */,
+				02617FDA2D2351BC00275543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02617FD62D2351BC00275543 /* Build configuration list for PBXNativeTarget "voiceraFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02617FD72D2351BC00275543 /* Debug */,
+				02617FD82D2351BC00275543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02617FDB2D2351BC00275543 /* Build configuration list for PBXNativeTarget "voiceraFaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02617FDC2D2351BC00275543 /* Debug */,
+				02617FDD2D2351BC00275543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02617FDE2D2351BC00275543 /* Build configuration list for PBXNativeTarget "voiceraFaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02617FDF2D2351BC00275543 /* Debug */,
+				02617FE02D2351BC00275543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02617FA22D2351BA00275543 /* Project object */;
+}
