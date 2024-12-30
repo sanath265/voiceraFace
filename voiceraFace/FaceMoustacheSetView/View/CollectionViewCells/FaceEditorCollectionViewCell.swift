@@ -8,8 +8,17 @@
 import UIKit
 
 class FaceEditorCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var moustacheImage: UIImageView!
-    @IBOutlet weak var moustacheTitle: UILabel!
+    @IBOutlet weak var moustacheImage: UIImageView! {
+        didSet {
+            moustacheImage.backgroundColor = .white
+            moustacheImage.layer.cornerRadius = moustacheImage.frame.height / 2.0
+        }
+    }
+    @IBOutlet weak var moustacheTitle: UILabel! {
+        didSet {
+            moustacheTitle.textColor = .white
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,7 +27,7 @@ class FaceEditorCollectionViewCell: UICollectionViewCell {
     func setup(imageName: String?, imageTitle: String?) {
         
         if let imageName {
-            moustacheImage.image = UIImage(named: "imageName")
+            moustacheImage.image = UIImage(named: imageName)
         }
         
         if let imageTitle {

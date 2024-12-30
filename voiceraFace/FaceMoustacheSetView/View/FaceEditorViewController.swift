@@ -9,20 +9,28 @@ import UIKit
 import ARKit
 import AVFoundation
 
+import UIKit
+import ARKit
+import AVFoundation
+
 class FaceEditorViewController: UIViewController, ARSCNViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-   @IBOutlet weak private var sceneView: ARSCNView!
+    @IBOutlet weak private var sceneView: ARSCNView!
     private var mustacheImages: [String] = [ "mustache1", "mustache2", "mustache3" ]
     private var selectedMustacheIndex = 0
+
     @IBOutlet weak private var collectionView: UICollectionView! {
         didSet {
             let nib = UINib(nibName: "FaceEditorCollectionViewCell", bundle: nil)
             collectionView.register(nib, forCellWithReuseIdentifier: "FaceEditorCollectionViewCell")
+            collectionView.dataSource = self
+            collectionView.delegate = self
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        startARSession()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -49,7 +57,6 @@ class FaceEditorViewController: UIViewController, ARSCNViewDelegate, UICollectio
         guard let faceAnchor = anchor as? ARFaceAnchor else { return nil }
         
         let node = SCNNode()
-
         let mustacheImage = mustacheImages[selectedMustacheIndex]
         let plane = SCNPlane(width: 0.1, height: 0.05)
         plane.firstMaterial?.diffuse.contents = mustacheImage
@@ -78,6 +85,11 @@ class FaceEditorViewController: UIViewController, ARSCNViewDelegate, UICollectio
                     imageTitle: mustacheImages[indexPath.row])
         return cell ?? UICollectionViewCell()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
+                       sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 50, height: 75)
+    }
 
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
@@ -91,4 +103,3 @@ class FaceEditorViewController: UIViewController, ARSCNViewDelegate, UICollectio
         startARSession()
     }
 }
-
