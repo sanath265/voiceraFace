@@ -1,24 +1,19 @@
-//
-//  FaceEditorViewController.swift
-//  voicera
-//
-//  Created by sanath kavatooru on 30/12/24.
-//
-
 import UIKit
-import ARKit
 import AVFoundation
 
-import UIKit
-import ARKit
-import AVFoundation
-
-class FaceEditorViewController: UIViewController, ARSCNViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
-    @IBOutlet weak private var sceneView: ARSCNView!
+class FaceEditorViewController: UIViewController {
+    
     private var mustacheImages: [String] = [ "mustache1", "mustache2", "mustache3" ]
     private var selectedMustacheIndex = 0
-
+    private var captureSession: AVCaptureSession!
+    private var videoPreviewLayer: AVCaptureVideoPreviewLayer!
+    private var movieOutput: AVCaptureMovieFileOutput!
+    private var isRecording = false
+    private var isUsingFrontCamera = true
+    private var recordingTimer: Timer?
+    private var recordingDuration: Int = 0
+    
+    @IBOutlet weak private var sceneView: UIView!
     @IBOutlet weak private var collectionView: UICollectionView! {
         didSet {
             let nib = UINib(nibName: "FaceEditorCollectionViewCell", bundle: nil)
@@ -27,56 +22,76 @@ class FaceEditorViewController: UIViewController, ARSCNViewDelegate, UICollectio
             collectionView.delegate = self
         }
     }
-
+    
+    @IBOutlet weak private var recordImage: UIImageView! {
+        didSet {
+            recordImage.image = UIImage(systemName: "record.circle.fill")?.withRenderingMode(.alwaysTemplate)
+            recordImage.tintColor = .white
+            recordImage.isUserInteractionEnabled = true
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(startRecording(_:)))
+            recordImage.addGestureRecognizer(tapGesture)
+        }
+    }
+    
+    @IBOutlet weak private var rotateCameraImage: UIImageView! {
+        didSet {
+            rotateCameraImage.image = UIImage(named: "rotate")
+            rotateCameraImage.isUserInteractionEnabled = true
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(toggleCamera(_:)))
+            rotateCameraImage.addGestureRecognizer(tapGesture)
+        }
+    }
+    
+    @IBOutlet weak private var timeLabel: UILabel! {
+        didSet {
+            timeLabel.layer.cornerRadius = timeLabel.frame.height / 2
+            timeLabel.layoutIfNeeded()
+            timeLabel.layer.borderColor = UIColor.clear.cgColor
+            timeLabel.text = "00:00"
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        startARSession()
+        setupRecordingSession()
+        setupUI()
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        startARSession()
+        DispatchQueue.global(qos: .background).async { [weak self] in
+            
+            if let self,
+               let captureSession = self.captureSession,
+               captureSession.isRunning == false {
+                self.captureSession.startRunning()
+            }
+        }
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        sceneView.session.pause()
+        captureSession.stopRunning()
     }
-
-    private func startARSession() {
-        guard ARFaceTrackingConfiguration.isSupported else {
-            print("Face tracking is not supported on this device.")
-            return
-        }
-
-        let configuration = ARFaceTrackingConfiguration()
-        sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        videoPreviewLayer?.frame = sceneView.bounds
     }
-
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        guard let faceAnchor = anchor as? ARFaceAnchor else { return nil }
-        
-        let node = SCNNode()
-        let mustacheImage = mustacheImages[selectedMustacheIndex]
-        let plane = SCNPlane(width: 0.1, height: 0.05)
-        plane.firstMaterial?.diffuse.contents = mustacheImage
-        plane.firstMaterial?.isDoubleSided = true
-
-        let mustacheNode = SCNNode(geometry: plane)
-        mustacheNode.position = SCNVector3(faceAnchor.geometry.vertices[12].x, faceAnchor.geometry.vertices[12].y - 0.02, faceAnchor.geometry.vertices[12].z)
-        mustacheNode.eulerAngles.x = -.pi / 2
-
-        node.addChildNode(mustacheNode)
-        return node
+    
+    private func setupUI() {
+        recordImage.isHidden = false
     }
+}
 
-    // MARK: - UICollectionView DataSource
-
+extension FaceEditorViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         return mustacheImages.count
     }
-
+    
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FaceEditorCollectionViewCell",
@@ -87,19 +102,157 @@ class FaceEditorViewController: UIViewController, ARSCNViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-                       sizeForItemAt indexPath: IndexPath) -> CGSize {
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 50, height: 75)
     }
-
+    
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
         selectedMustacheIndex = indexPath.item
         collectionView.reloadData()
-        restartARSession()
     }
+}
 
-    private func restartARSession() {
-        sceneView.session.pause()
-        startARSession()
+extension FaceEditorViewController: AVCaptureFileOutputRecordingDelegate {
+    
+    private func setupRecordingSession() {
+        captureSession = AVCaptureSession()
+        
+        // Camera input
+        guard let videoDevice = AVCaptureDevice.default(for: .video) else { return }
+        do {
+            let videoInput = try AVCaptureDeviceInput(device: videoDevice)
+            if captureSession.canAddInput(videoInput) {
+                captureSession.addInput(videoInput)
+            }
+        } catch {
+            print("Failed to create video input: \(error)")
+            return
+        }
+        
+        // Audio input
+        guard let audioDevice = AVCaptureDevice.default(for: .audio) else { return }
+        do {
+            let audioInput = try AVCaptureDeviceInput(device: audioDevice)
+            if captureSession.canAddInput(audioInput) {
+                captureSession.addInput(audioInput)
+            }
+        } catch {
+            print("Failed to create audio input: \(error)")
+            return
+        }
+        
+        // Video and Audio outputs
+        movieOutput = AVCaptureMovieFileOutput()
+        if captureSession.canAddOutput(movieOutput) {
+            captureSession.addOutput(movieOutput)
+        }
+        
+        videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession!)
+        if let videoPreviewLayer {
+            videoPreviewLayer.frame = sceneView.frame
+            videoPreviewLayer.videoGravity = .resizeAspectFill
+            sceneView.layer.addSublayer(videoPreviewLayer)
+        }
+    }
+    
+    @objc private func startRecording(_ sender: UITapGestureRecognizer) {
+        if isRecording {
+            stopRecording()
+        } else {
+            let filePath = NSTemporaryDirectory().appending("video-\(Date()).mov")
+            let outputURL = URL(fileURLWithPath: filePath)
+            
+            DispatchQueue.global(qos: .background).async {
+                if !self.captureSession.isRunning {
+                    self.captureSession.startRunning()
+                }
+                
+                DispatchQueue.main.async {
+                    self.movieOutput.startRecording(to: outputURL, recordingDelegate: self)
+                    self.isRecording = true
+                    self.recordingDuration = 0 // Reset the duration
+                    self.startTimer()
+                    self.updateUIForRecording()
+                }
+            }
+        }
+    }
+    
+    private func stopRecording() {
+        movieOutput.stopRecording()
+        isRecording = false
+        stopTimer()
+        updateUIForStopped()
+    }
+    
+    private func startTimer() {
+        recordingTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateRecordingTime), userInfo: nil, repeats: true)
+    }
+    
+    @objc private func updateRecordingTime() {
+        recordingDuration += 1
+        let minutes = recordingDuration / 60
+        let seconds = recordingDuration % 60
+        timeLabel.text = String(format: "%02d:%02d", minutes, seconds)
+    }
+    
+    private func stopTimer() {
+        recordingTimer?.invalidate()
+        recordingTimer = nil
+        timeLabel.text = "00:00"
+    }
+    
+    
+    func updateUIForRecording() {
+        recordImage.image = UIImage(systemName: "stop.circle.fill")?.withRenderingMode(.alwaysTemplate)
+        recordImage.tintColor = .red
+        rotateCameraImage.isHidden = true
+    }
+    
+    func updateUIForStopped() {
+        recordImage.image = UIImage(systemName: "record.circle.fill")?.withRenderingMode(.alwaysTemplate)
+        recordImage.tintColor = .white
+        rotateCameraImage.isHidden = false
+    }
+    
+    @objc private func toggleCamera(_ sender: UITapGestureRecognizer) {
+        guard let currentInput = captureSession.inputs.first as? AVCaptureDeviceInput else { return }
+        
+        captureSession.beginConfiguration()
+        defer { captureSession.commitConfiguration() }
+        
+        captureSession.removeInput(currentInput)
+        
+        let newCameraDevice: AVCaptureDevice?
+        if currentInput.device.position == .back {
+            newCameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front)
+        } else {
+            newCameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
+        }
+        
+        guard let newDevice = newCameraDevice,
+              let newInput = try? AVCaptureDeviceInput(device: newDevice),
+              captureSession.canAddInput(newInput) else { return }
+        
+        captureSession.addInput(newInput)
+    }
+    
+    func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
+        stopTimer()
+        if let error = error {
+            print("Error recording: \(error.localizedDescription)")
+        } else {
+            // Save the recorded video and audio to Photo Library
+            UISaveVideoAtPathToSavedPhotosAlbum(outputFileURL.path, self, #selector(videoSavedToLibrary(_:didFinishSavingWithError:contextInfo:)), nil)
+        }
+    }
+    
+    @objc func videoSavedToLibrary(_ videoPath: String?, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            print("Error saving video: \(error.localizedDescription)")
+        } else {
+            print("Video saved successfully!")
+        }
     }
 }
