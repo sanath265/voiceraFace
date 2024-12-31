@@ -1,0 +1,6 @@
+framework module Pods_voiceraFaceTests {
+  umbrella header "Pods-voiceraFaceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

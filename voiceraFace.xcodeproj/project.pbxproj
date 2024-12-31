@@ -3,8 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 55;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		0236A7C42D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7B32D24661C004319DC /* FaceEditorCollectionViewCell.swift */; };
+		0236A7C52D24661C004319DC /* FaceEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7B62D24661C004319DC /* FaceEditorViewController.swift */; };
+		0236A7C62D24661C004319DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7BA2D24661C004319DC /* AppDelegate.swift */; };
+		0236A7C72D24661C004319DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7C02D24661C004319DC /* SceneDelegate.swift */; };
+		0236A7C82D24661C004319DC /* voiceraFace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7C12D24661C004319DC /* voiceraFace.xcdatamodeld */; };
+		0236A7C92D24661C004319DC /* FaceEditorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7B42D24661C004319DC /* FaceEditorCollectionViewCell.xib */; };
+		0236A7CA2D24661C004319DC /* FaceEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7B72D24661C004319DC /* FaceEditorViewController.xib */; };
+		0236A7CB2D24661C004319DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BB2D24661C004319DC /* Assets.xcassets */; };
+		0236A7CD2D24661C004319DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BE2D24661C004319DC /* LaunchScreen.storyboard */; };
+		0236A7CE2D24661C004319DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BF2D24661C004319DC /* Main.storyboard */; };
+		0236A7CF2D24661C004319DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BF2D24661C004319DC /* Main.storyboard */; };
+		0236A7D02D24661C004319DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BB2D24661C004319DC /* Assets.xcassets */; };
+		0236A7D12D24661C004319DC /* FaceEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7B72D24661C004319DC /* FaceEditorViewController.xib */; };
+		0236A7D22D24661C004319DC /* FaceEditorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7B42D24661C004319DC /* FaceEditorCollectionViewCell.xib */; };
+		0236A7D32D24661C004319DC /* FaceEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7B62D24661C004319DC /* FaceEditorViewController.swift */; };
+		0236A7D42D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7B32D24661C004319DC /* FaceEditorCollectionViewCell.swift */; };
+		0236A7D52D24661C004319DC /* FaceEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7B62D24661C004319DC /* FaceEditorViewController.swift */; };
+		0236A7D62D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7B32D24661C004319DC /* FaceEditorCollectionViewCell.swift */; };
+		0236A7D72D24661C004319DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BF2D24661C004319DC /* Main.storyboard */; };
+		0236A7D82D24661C004319DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BB2D24661C004319DC /* Assets.xcassets */; };
+		0236A7D92D24661C004319DC /* FaceEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7B72D24661C004319DC /* FaceEditorViewController.xib */; };
+		0236A7DA2D24661C004319DC /* FaceEditorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7B42D24661C004319DC /* FaceEditorCollectionViewCell.xib */; };
+		0236A7DD2D246625004319DC /* voiceraFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7DB2D246625004319DC /* voiceraFaceTests.swift */; };
+		0236A7E12D24662A004319DC /* voiceraFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7DE2D24662A004319DC /* voiceraFaceUITests.swift */; };
+		0236A7E22D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7DF2D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift */; };
+		025139F02D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139EF2D24733500B05889 /* FaceEditorViewController+CollectionView.swift */; };
+		025139F12D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139EF2D24733500B05889 /* FaceEditorViewController+CollectionView.swift */; };
+		025139F22D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139EF2D24733500B05889 /* FaceEditorViewController+CollectionView.swift */; };
+		025139F42D24972000B05889 /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F32D24971C00B05889 /* FaceNode.swift */; };
+		025139F52D24972000B05889 /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F32D24971C00B05889 /* FaceNode.swift */; };
+		025139F62D24972000B05889 /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F32D24971C00B05889 /* FaceNode.swift */; };
+		02F218772D246C6700ED5B40 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 02F218762D246C6700ED5B40 /* Podfile */; };
+		02F218782D246C6700ED5B40 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 02F218762D246C6700ED5B40 /* Podfile */; };
+		02F218792D246C6700ED5B40 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 02F218762D246C6700ED5B40 /* Podfile */; };
+		13199C143C8621BDCE5ED9CB /* Pods_voiceraFace_voiceraFaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835B3D565BA60EC475040382 /* Pods_voiceraFace_voiceraFaceUITests.framework */; };
+		1E92371E531E25BC235E3113 /* Pods_voiceraFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCD2E9605CF90B0465094A4 /* Pods_voiceraFace.framework */; };
+		6C291947423E6D00C9A1CA86 /* Pods_voiceraFaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70105A2EC82FBB1EB5FCA626 /* Pods_voiceraFaceTests.framework */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		02617FC42D2351BC00275543 /* PBXContainerItemProxy */ = {
@@ -24,73 +64,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0236A7B32D24661C004319DC /* FaceEditorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceEditorCollectionViewCell.swift; sourceTree = "<group>"; };
+		0236A7B42D24661C004319DC /* FaceEditorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceEditorCollectionViewCell.xib; sourceTree = "<group>"; };
+		0236A7B62D24661C004319DC /* FaceEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceEditorViewController.swift; sourceTree = "<group>"; };
+		0236A7B72D24661C004319DC /* FaceEditorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaceEditorViewController.xib; sourceTree = "<group>"; };
+		0236A7BA2D24661C004319DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0236A7BB2D24661C004319DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0236A7BC2D24661C004319DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0236A7BD2D24661C004319DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0236A7BF2D24661C004319DC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0236A7C02D24661C004319DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0236A7C32D24661C004319DC /* voiceraFace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = voiceraFace.xcdatamodel; sourceTree = "<group>"; };
+		0236A7DB2D246625004319DC /* voiceraFaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceraFaceTests.swift; sourceTree = "<group>"; };
+		0236A7DE2D24662A004319DC /* voiceraFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceraFaceUITests.swift; sourceTree = "<group>"; };
+		0236A7DF2D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceraFaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		025139EF2D24733500B05889 /* FaceEditorViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FaceEditorViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		025139F32D24971C00B05889 /* FaceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceNode.swift; sourceTree = "<group>"; };
 		02617FAA2D2351BA00275543 /* voiceraFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voiceraFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02617FC32D2351BC00275543 /* voiceraFaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voiceraFaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02617FCD2D2351BC00275543 /* voiceraFaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voiceraFaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F218762D246C6700ED5B40 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		0306D4F0456457C439BE0588 /* Pods-voiceraFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceraFace.debug.xcconfig"; path = "Target Support Files/Pods-voiceraFace/Pods-voiceraFace.debug.xcconfig"; sourceTree = "<group>"; };
+		252E203F2C7BF88C34694441 /* Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig"; path = "Target Support Files/Pods-voiceraFace-voiceraFaceUITests/Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		378BB7421D4289EA377DC5DE /* Pods-voiceraFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceraFace.release.xcconfig"; path = "Target Support Files/Pods-voiceraFace/Pods-voiceraFace.release.xcconfig"; sourceTree = "<group>"; };
+		67912256070E1846CB0816F9 /* Pods-voiceraFaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceraFaceTests.debug.xcconfig"; path = "Target Support Files/Pods-voiceraFaceTests/Pods-voiceraFaceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F52F0A22E25519D7C3C2456 /* Pods-voiceraFace-voiceraFaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceraFace-voiceraFaceUITests.release.xcconfig"; path = "Target Support Files/Pods-voiceraFace-voiceraFaceUITests/Pods-voiceraFace-voiceraFaceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70105A2EC82FBB1EB5FCA626 /* Pods_voiceraFaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voiceraFaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		835B3D565BA60EC475040382 /* Pods_voiceraFace_voiceraFaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voiceraFace_voiceraFaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57852FD139B1E1F12ADD48D /* Pods-voiceraFaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceraFaceTests.release.xcconfig"; path = "Target Support Files/Pods-voiceraFaceTests/Pods-voiceraFaceTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECCD2E9605CF90B0465094A4 /* Pods_voiceraFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voiceraFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		0261800D2D23541700275543 /* Exceptions for "voiceraFace" folder in "voiceraFaceTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Assets.xcassets,
-				FaceMoustacheSetView/View/CollectionViewCells/FaceEditorCollectionViewCell.swift,
-				FaceMoustacheSetView/View/CollectionViewCells/FaceEditorCollectionViewCell.xib,
-				FaceMoustacheSetView/View/FaceEditorViewController.swift,
-				FaceMoustacheSetView/View/FaceEditorViewController.xib,
-				Main.storyboard,
-			);
-			target = 02617FC22D2351BC00275543 /* voiceraFaceTests */;
-		};
-		0261800E2D23541700275543 /* Exceptions for "voiceraFace" folder in "voiceraFaceUITests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Assets.xcassets,
-				FaceMoustacheSetView/View/CollectionViewCells/FaceEditorCollectionViewCell.swift,
-				FaceMoustacheSetView/View/CollectionViewCells/FaceEditorCollectionViewCell.xib,
-				FaceMoustacheSetView/View/FaceEditorViewController.swift,
-				FaceMoustacheSetView/View/FaceEditorViewController.xib,
-				Main.storyboard,
-			);
-			target = 02617FCC2D2351BC00275543 /* voiceraFaceUITests */;
-		};
-		026180192D2354FC00275543 /* Exceptions for "voiceraFace" folder in "voiceraFace" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 02617FA92D2351BA00275543 /* voiceraFace */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		02617FAC2D2351BA00275543 /* voiceraFace */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				026180192D2354FC00275543 /* Exceptions for "voiceraFace" folder in "voiceraFace" target */,
-				0261800D2D23541700275543 /* Exceptions for "voiceraFace" folder in "voiceraFaceTests" target */,
-				0261800E2D23541700275543 /* Exceptions for "voiceraFace" folder in "voiceraFaceUITests" target */,
-			);
-			path = voiceraFace;
-			sourceTree = "<group>";
-		};
-		02617FC62D2351BC00275543 /* voiceraFaceTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = voiceraFaceTests;
-			sourceTree = "<group>";
-		};
-		02617FD02D2351BC00275543 /* voiceraFaceUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = voiceraFaceUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		02617FA72D2351BA00275543 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E92371E531E25BC235E3113 /* Pods_voiceraFace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C291947423E6D00C9A1CA86 /* Pods_voiceraFaceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,19 +116,84 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13199C143C8621BDCE5ED9CB /* Pods_voiceraFace_voiceraFaceUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0236A7B52D24661C004319DC /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				0236A7B32D24661C004319DC /* FaceEditorCollectionViewCell.swift */,
+				0236A7B42D24661C004319DC /* FaceEditorCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		0236A7B82D24661C004319DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				025139F32D24971C00B05889 /* FaceNode.swift */,
+				0236A7B52D24661C004319DC /* CollectionViewCells */,
+				0236A7B62D24661C004319DC /* FaceEditorViewController.swift */,
+				0236A7B72D24661C004319DC /* FaceEditorViewController.xib */,
+				025139EF2D24733500B05889 /* FaceEditorViewController+CollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0236A7B92D24661C004319DC /* FaceMoustacheSetView */ = {
+			isa = PBXGroup;
+			children = (
+				0236A7B82D24661C004319DC /* View */,
+			);
+			path = FaceMoustacheSetView;
+			sourceTree = "<group>";
+		};
+		0236A7C22D24661C004319DC /* voiceraFace */ = {
+			isa = PBXGroup;
+			children = (
+				0236A7B92D24661C004319DC /* FaceMoustacheSetView */,
+				0236A7BA2D24661C004319DC /* AppDelegate.swift */,
+				0236A7BB2D24661C004319DC /* Assets.xcassets */,
+				0236A7BC2D24661C004319DC /* Info.plist */,
+				0236A7BE2D24661C004319DC /* LaunchScreen.storyboard */,
+				0236A7BF2D24661C004319DC /* Main.storyboard */,
+				0236A7C02D24661C004319DC /* SceneDelegate.swift */,
+				0236A7C12D24661C004319DC /* voiceraFace.xcdatamodeld */,
+			);
+			path = voiceraFace;
+			sourceTree = "<group>";
+		};
+		0236A7DC2D246625004319DC /* voiceraFaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				0236A7DB2D246625004319DC /* voiceraFaceTests.swift */,
+			);
+			path = voiceraFaceTests;
+			sourceTree = "<group>";
+		};
+		0236A7E02D24662A004319DC /* voiceraFaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0236A7DE2D24662A004319DC /* voiceraFaceUITests.swift */,
+				0236A7DF2D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift */,
+			);
+			path = voiceraFaceUITests;
+			sourceTree = "<group>";
+		};
 		02617FA12D2351BA00275543 = {
 			isa = PBXGroup;
 			children = (
-				02617FAC2D2351BA00275543 /* voiceraFace */,
-				02617FC62D2351BC00275543 /* voiceraFaceTests */,
-				02617FD02D2351BC00275543 /* voiceraFaceUITests */,
+				02F218762D246C6700ED5B40 /* Podfile */,
+				0236A7C22D24661C004319DC /* voiceraFace */,
+				0236A7DC2D246625004319DC /* voiceraFaceTests */,
+				0236A7E02D24662A004319DC /* voiceraFaceUITests */,
 				02617FAB2D2351BA00275543 /* Products */,
+				87AC77409E5ECAF1DF93EAF7 /* Pods */,
+				B9E3EE77B21BAFE62231F99F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +207,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		87AC77409E5ECAF1DF93EAF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0306D4F0456457C439BE0588 /* Pods-voiceraFace.debug.xcconfig */,
+				378BB7421D4289EA377DC5DE /* Pods-voiceraFace.release.xcconfig */,
+				252E203F2C7BF88C34694441 /* Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig */,
+				6F52F0A22E25519D7C3C2456 /* Pods-voiceraFace-voiceraFaceUITests.release.xcconfig */,
+				67912256070E1846CB0816F9 /* Pods-voiceraFaceTests.debug.xcconfig */,
+				A57852FD139B1E1F12ADD48D /* Pods-voiceraFaceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9E3EE77B21BAFE62231F99F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECCD2E9605CF90B0465094A4 /* Pods_voiceraFace.framework */,
+				835B3D565BA60EC475040382 /* Pods_voiceraFace_voiceraFaceUITests.framework */,
+				70105A2EC82FBB1EB5FCA626 /* Pods_voiceraFaceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02617FD62D2351BC00275543 /* Build configuration list for PBXNativeTarget "voiceraFace" */;
 			buildPhases = (
+				2A20BBFF1988E18E746EDE2F /* [CP] Check Pods Manifest.lock */,
 				02617FA62D2351BA00275543 /* Sources */,
 				02617FA72D2351BA00275543 /* Frameworks */,
 				02617FA82D2351BA00275543 /* Resources */,
@@ -146,12 +246,7 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				02617FAC2D2351BA00275543 /* voiceraFace */,
-			);
 			name = voiceraFace;
-			packageProductDependencies = (
-			);
 			productName = voiceraFace;
 			productReference = 02617FAA2D2351BA00275543 /* voiceraFace.app */;
 			productType = "com.apple.product-type.application";
@@ -160,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02617FDB2D2351BC00275543 /* Build configuration list for PBXNativeTarget "voiceraFaceTests" */;
 			buildPhases = (
+				67998D04EF582C668209566C /* [CP] Check Pods Manifest.lock */,
 				02617FBF2D2351BC00275543 /* Sources */,
 				02617FC02D2351BC00275543 /* Frameworks */,
 				02617FC12D2351BC00275543 /* Resources */,
@@ -169,12 +265,7 @@
 			dependencies = (
 				02617FC52D2351BC00275543 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				02617FC62D2351BC00275543 /* voiceraFaceTests */,
-			);
 			name = voiceraFaceTests;
-			packageProductDependencies = (
-			);
 			productName = voiceraFaceTests;
 			productReference = 02617FC32D2351BC00275543 /* voiceraFaceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -183,6 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02617FDE2D2351BC00275543 /* Build configuration list for PBXNativeTarget "voiceraFaceUITests" */;
 			buildPhases = (
+				72F8C4919A27D405E681061E /* [CP] Check Pods Manifest.lock */,
 				02617FC92D2351BC00275543 /* Sources */,
 				02617FCA2D2351BC00275543 /* Frameworks */,
 				02617FCB2D2351BC00275543 /* Resources */,
@@ -192,12 +284,7 @@
 			dependencies = (
 				02617FCF2D2351BC00275543 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				02617FD02D2351BC00275543 /* voiceraFaceUITests */,
-			);
 			name = voiceraFaceUITests;
-			packageProductDependencies = (
-			);
 			productName = voiceraFaceUITests;
 			productReference = 02617FCD2D2351BC00275543 /* voiceraFaceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -226,6 +313,7 @@
 				};
 			};
 			buildConfigurationList = 02617FA52D2351BA00275543 /* Build configuration list for PBXProject "voiceraFace" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -233,8 +321,6 @@
 				Base,
 			);
 			mainGroup = 02617FA12D2351BA00275543;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 02617FAB2D2351BA00275543 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -251,6 +337,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F218782D246C6700ED5B40 /* Podfile in Resources */,
+				0236A7C92D24661C004319DC /* FaceEditorCollectionViewCell.xib in Resources */,
+				0236A7CA2D24661C004319DC /* FaceEditorViewController.xib in Resources */,
+				0236A7CB2D24661C004319DC /* Assets.xcassets in Resources */,
+				0236A7CD2D24661C004319DC /* LaunchScreen.storyboard in Resources */,
+				0236A7CE2D24661C004319DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +350,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F218792D246C6700ED5B40 /* Podfile in Resources */,
+				0236A7CF2D24661C004319DC /* Main.storyboard in Resources */,
+				0236A7D02D24661C004319DC /* Assets.xcassets in Resources */,
+				0236A7D12D24661C004319DC /* FaceEditorViewController.xib in Resources */,
+				0236A7D22D24661C004319DC /* FaceEditorCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,16 +362,97 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F218772D246C6700ED5B40 /* Podfile in Resources */,
+				0236A7D72D24661C004319DC /* Main.storyboard in Resources */,
+				0236A7D82D24661C004319DC /* Assets.xcassets in Resources */,
+				0236A7D92D24661C004319DC /* FaceEditorViewController.xib in Resources */,
+				0236A7DA2D24661C004319DC /* FaceEditorCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A20BBFF1988E18E746EDE2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-voiceraFace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67998D04EF582C668209566C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-voiceraFaceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72F8C4919A27D405E681061E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-voiceraFace-voiceraFaceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02617FA62D2351BA00275543 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0236A7C42D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */,
+				025139F22D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */,
+				0236A7C52D24661C004319DC /* FaceEditorViewController.swift in Sources */,
+				0236A7C62D24661C004319DC /* AppDelegate.swift in Sources */,
+				0236A7C72D24661C004319DC /* SceneDelegate.swift in Sources */,
+				0236A7C82D24661C004319DC /* voiceraFace.xcdatamodeld in Sources */,
+				025139F52D24972000B05889 /* FaceNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +460,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0236A7D32D24661C004319DC /* FaceEditorViewController.swift in Sources */,
+				0236A7D42D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */,
+				0236A7DD2D246625004319DC /* voiceraFaceTests.swift in Sources */,
+				025139F42D24972000B05889 /* FaceNode.swift in Sources */,
+				025139F12D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +472,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0236A7D52D24661C004319DC /* FaceEditorViewController.swift in Sources */,
+				0236A7D62D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */,
+				025139F62D24972000B05889 /* FaceNode.swift in Sources */,
+				025139F02D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */,
+				0236A7E12D24662A004319DC /* voiceraFaceUITests.swift in Sources */,
+				0236A7E22D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +496,21 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		0236A7BE2D24661C004319DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0236A7BD2D24661C004319DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		02617FD72D2351BC00275543 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0306D4F0456457C439BE0588 /* Pods-voiceraFace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +524,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +540,7 @@
 		};
 		02617FD82D2351BC00275543 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 378BB7421D4289EA377DC5DE /* Pods-voiceraFace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -351,6 +554,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,6 +689,7 @@
 		};
 		02617FDC2D2351BC00275543 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67912256070E1846CB0816F9 /* Pods-voiceraFaceTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +709,7 @@
 		};
 		02617FDD2D2351BC00275543 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57852FD139B1E1F12ADD48D /* Pods-voiceraFaceTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +729,7 @@
 		};
 		02617FDF2D2351BC00275543 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252E203F2C7BF88C34694441 /* Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -540,6 +747,7 @@
 		};
 		02617FE02D2351BC00275543 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F52F0A22E25519D7C3C2456 /* Pods-voiceraFace-voiceraFaceUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -595,6 +803,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0236A7C12D24661C004319DC /* voiceraFace.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0236A7C32D24661C004319DC /* voiceraFace.xcdatamodel */,
+			);
+			currentVersion = 0236A7C32D24661C004319DC /* voiceraFace.xcdatamodel */;
+			path = voiceraFace.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 02617FA22D2351BA00275543 /* Project object */;
 }

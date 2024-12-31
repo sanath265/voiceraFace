@@ -1,9 +1,14 @@
 import UIKit
 import AVFoundation
+import ARKit
 
 class FaceEditorViewController: UIViewController {
     
-    private var mustacheImages: [String] = [ "mustache1", "mustache2", "mustache3" ]
+    private var mustacheImages: [String] = [ "mustache1",
+                                             "mustache2",
+                                             "mustache3" ]
+    let features = ["mustache"]
+    var featureIndices = [[6]]
     private var selectedMustacheIndex = 0
     private var captureSession: AVCaptureSession!
     private var videoPreviewLayer: AVCaptureVideoPreviewLayer!
@@ -12,8 +17,12 @@ class FaceEditorViewController: UIViewController {
     private var isUsingFrontCamera = true
     private var recordingTimer: Timer?
     private var recordingDuration: Int = 0
+    private var arSession: ARSession!
+    private var arAnchor: ARFaceAnchor!
+    private var mustacheNode: SCNNode?
     
-    @IBOutlet weak private var sceneView: UIView!
+    
+    @IBOutlet weak private var sceneView: ARSCNView!
     @IBOutlet weak private var collectionView: UICollectionView! {
         didSet {
             let nib = UINib(nibName: "FaceEditorCollectionViewCell", bundle: nil)
@@ -54,25 +63,28 @@ class FaceEditorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupRecordingSession()
+//        setupRecordingSession()
         setupUI()
+        sceneView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        DispatchQueue.global(qos: .background).async { [weak self] in
-            
-            if let self,
-               let captureSession = self.captureSession,
-               captureSession.isRunning == false {
-                self.captureSession.startRunning()
-            }
-        }
+//        DispatchQueue.global(qos: .background).async { [weak self] in
+//            
+//            if let self,
+//               let captureSession = self.captureSession,
+//               captureSession.isRunning == false {
+//                self.captureSession.startRunning()
+//            }
+//        }
+        setupFaceTracking()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         captureSession.stopRunning()
+        sceneView.session.pause()
     }
     
     override func viewDidLayoutSubviews() {
@@ -101,15 +113,16 @@ extension FaceEditorViewController: UICollectionViewDataSource, UICollectionView
         return cell ?? UICollectionViewCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedMustacheIndex = indexPath.item
+        if let faceNode = sceneView.scene.rootNode.childNode(withName: "mustache", recursively: true) as? FaceNode {
+            faceNode.next(index: selectedMustacheIndex)
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 50, height: 75)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        didSelectItemAt indexPath: IndexPath) {
-        selectedMustacheIndex = indexPath.item
-        collectionView.reloadData()
     }
 }
 
@@ -255,4 +268,61 @@ extension FaceEditorViewController: AVCaptureFileOutputRecordingDelegate {
             print("Video saved successfully!")
         }
     }
+}
+
+extension FaceEditorViewController {
+    func setupFaceTracking() {
+        guard ARFaceTrackingConfiguration.isSupported else { return }
+        let config = ARFaceTrackingConfiguration()
+        sceneView.session.run(config)
+    }
+    
+}
+
+extension FaceEditorViewController: ARSCNViewDelegate {
+    
+    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        
+        let device: MTLDevice!
+        device = MTLCreateSystemDefaultDevice()
+        guard let faceAnchor = anchor as? ARFaceAnchor else {
+            return nil
+        }
+        let faceGeometry = ARSCNFaceGeometry(device: device)
+        let node = SCNNode(geometry: faceGeometry)
+        node.geometry?.firstMaterial?.fillMode = .lines
+        node.geometry?.firstMaterial?.transparency = 0.0
+        
+        let mustacheNode = FaceNode(with: mustacheImages)
+        mustacheNode.name = "mustache"
+        node.addChildNode(mustacheNode)
+        
+        updateFeatures(for: node, using: faceAnchor)
+        
+        return node
+    }
+    
+    func renderer(
+        _ renderer: SCNSceneRenderer,
+        didUpdate node: SCNNode,
+        for anchor: ARAnchor) {
+            guard let faceAnchor = anchor as? ARFaceAnchor,
+                  let faceGeometry = node.geometry as? ARSCNFaceGeometry else {
+                return
+            }
+            
+            faceGeometry.update(from: faceAnchor.geometry)
+            updateFeatures(for: node, using: faceAnchor)
+        }
+    
+    func updateFeatures(for node: SCNNode, using anchor: ARFaceAnchor) {
+        print(featureIndices)
+        let mustacheIndices = [[3]]
+        for (feature, indices) in zip(features, mustacheIndices) {
+            let child = node.childNode(withName: feature, recursively: false) as? FaceNode
+            let vertices = indices.map { anchor.geometry.vertices[$0] }
+            child?.updatePosition(for: vertices)
+        }
+    }
+    
 }
