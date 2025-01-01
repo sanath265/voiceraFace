@@ -7,73 +7,152 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10BADE5BF308F970CD24BACC294FEC34 /* Pods-voiceraFaceTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8966AB45E5433126BDED7C3F863BF7 /* Pods-voiceraFaceTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6968493DF26D9A853D90D80A0C7206F6 /* Pods-voiceraFaceTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7807519A46ED96F9B98FB75E2D5D3A4E /* Pods-voiceraFaceTests-dummy.m */; };
-		752301CAF6D01EF09DC00EFE01D23C0A /* Pods-voiceraFace-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5BDF4D0993ED52BA2D503DC087733B /* Pods-voiceraFace-dummy.m */; };
-		8CD14D92D659CBEEA119A95BE6692302 /* Pods-voiceraFace-voiceraFaceUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA499C7D19C0A7A1DC325833D2D7E332 /* Pods-voiceraFace-voiceraFaceUITests-dummy.m */; };
-		A8886FB37D682C93608CC32D792F156C /* Pods-voiceraFace-voiceraFaceUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D86A7C24AD3862F08F9CBBC4DC3067A2 /* Pods-voiceraFace-voiceraFaceUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A888C33D9DA299600578CFC54AF3611A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B23C949D7E1BB45614F33482A6BF6127 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D8E1B356A7596AC9974500E6EB07D846 /* Pods-voiceraFace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4BEBF1400C7CB3EE7D6558753E3BCA /* Pods-voiceraFace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003670ECFC3EE087BF0DCB46BA3B3BC8 /* Pods-voiceraFace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6963BA43FF905363CB37AD9DCCCE8620 /* Pods-voiceraFace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04A4260816D0DB2DCD8AE1E991093D29 /* Pods-voiceraFace-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA429677A9E5D8A2C8236C5F92C1A3 /* Pods-voiceraFace-dummy.m */; };
+		06CD00D26F2E0C7760ABEEDF3BA72182 /* QuickTimeMov.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FCF15E190E405A7FC88EDE2E3AC587 /* QuickTimeMov.swift */; };
+		0D9EA750DAC9811DF7E6CE4859A26737 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0FC2294D4412500D5F4D82F44852001D /* Generate+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F75CC297DB104958FCD18838E7E3DC /* Generate+GIF.swift */; };
+		10BADE5BF308F970CD24BACC294FEC34 /* Pods-voiceraFaceTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 290184D47BBD4D0F70EC1753E9EBC70E /* Pods-voiceraFaceTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EA96FF159C49139E6B7CB1DA7CEFD2D /* ARVideoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F08545FDC5749DF96E39CE7E0E13DE /* ARVideoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CEB2DBF5B617A386A8B9407D1A7927 /* JPEG.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D27C9FF71B1CA3F80B81C6BB633AF /* JPEG.swift */; };
+		22CC58A5CB7D42C15C6113A2979D013E /* Pods-voiceraFace-voiceraFaceUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44495C614DCE92A03F297662C03ABEAA /* Pods-voiceraFace-voiceraFaceUITests-dummy.m */; };
+		2B52043820DD2341B2750B4D15BB1748 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EADB7FCDFE8A530B29418D1952E11A2 /* ARView.swift */; };
+		39F6A34FBA8B1B0ACC4B996380B4309B /* ARVideoOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E4371020AF7E9BBE67E9DB9744A49 /* ARVideoOptions.swift */; };
+		4D04D81CFEBE95F9EAE6863C68A62F83 /* RenderARDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6948F3A98E66B20866F7CA4201D95 /* RenderARDelegate.swift */; };
+		53C8649644076B208A5C553CBCA0EFBB /* UIViewController+hasType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7A35B67F57F3D5BEB2C210EA50455 /* UIViewController+hasType.swift */; };
+		620F10A7197B781737F4158360792EF6 /* Generate+LivePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F97FF0E30735E59A1125D794D8B731 /* Generate+LivePhoto.swift */; };
+		6968493DF26D9A853D90D80A0C7206F6 /* Pods-voiceraFaceTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B550A1275FD019FD2AED2F83102C01BA /* Pods-voiceraFaceTests-dummy.m */; };
+		6EFADCA52ACAD2C3FEA56C09F18BBD3E /* CGImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B659FCBC32A57AD395A32A56B09B48 /* CGImage+Resize.swift */; };
+		721D4751DAE99D4E579A3FA9820B2697 /* RenderAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0774D020EFFB0BF7F377EA8A1312EE /* RenderAR.swift */; };
+		791BBDB458AF1A62C43D967B5D86227F /* RecordAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF89CB24556BAB2ED90EB7A61A29F22A /* RecordAR.swift */; };
+		88ECF9A22D1DC1C7E9F7C9DFB3EB232D /* ARVideoKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC0A40573002B4B2395F6D9B183788F2 /* ARVideoKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9490CF00B76C5FE264302D3867588552 /* WeakProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466ECD54AD25BC744F296DF268D9F78A /* WeakProxy.swift */; };
+		9BC536DD176B0C06984EF5CACF889001 /* video.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EF201A0FEA60D5BA813829F5C2973695 /* video.scnassets */; };
+		9F76690C17F800AF094CC83DBDCB6C91 /* RecordARDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF453CC971E9464E9343FF88A6796135 /* RecordARDelegate.swift */; };
+		A85F989D41C8F315ED25AE4769305DAD /* PHLivePhotoPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238AFC2F7C2F2258D8654DB605B5417 /* PHLivePhotoPlus.swift */; };
+		B5D44E2152ACD0D6F6578C5470376112 /* UIView+isType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0E1672362F5E0E55B4405B0228951 /* UIView+isType.swift */; };
+		B9668B8C206EE03DB454D027479D2CFC /* ViewAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69AB22AC8C89D593F26792E4430F7EF /* ViewAR.swift */; };
+		CBD78AC1534816992376AFAE16A6A5FF /* ARVideoKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D83695A2B6A189297597259D72BE82E /* ARVideoKit-dummy.m */; };
+		D658C5298CED78F5DBD81F39CF24C61C /* RecordAR+PhotoRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C785BDC5AE76F41238D289E90600BC97 /* RecordAR+PhotoRender.swift */; };
+		D91EAB0BC58383A947F735E7BFE6134C /* Pods-voiceraFace-voiceraFaceUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC167A8693874101DCE600C5A28DEA0 /* Pods-voiceraFace-voiceraFaceUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA0030915530AA719701E7096F3C897B /* WritAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D5E6B77A5B6E047BD874BFCF64A1C2 /* WritAR.swift */; };
+		EC1591CC6097411C8EA5C486342DA0DA /* UIImage+VideoBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295DDC26B0FC15DD8E301D0CAF0672BA /* UIImage+VideoBuffer.swift */; };
+		F07102D8F0360A90989FCC3B36CD37C4 /* ARInputViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF07453909CF6D211A6EACA952038EC3 /* ARInputViewOptions.swift */; };
+		F37ADF003277A3677FBA9D6B215E5AFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F568ACC6EEBC3E00021DD0C0B5100939 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FA48FAECDF185D7FDEA23EFD18E6AF20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C0A57E5C170B7523886867A600F0E0AD /* PBXContainerItemProxy */ = {
+		25F341C10AB25BBFEDF9ABE1873155DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F45CE91AABA41FC6A2D62AA39C6E4FBD;
+			remoteInfo = ARVideoKit;
+		};
+		CF1DF5E0E0E0847C9CC44F71E8E40E29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 044D6517EC1AB1884A41528244FE470D;
 			remoteInfo = "Pods-voiceraFace";
 		};
+		D9E2F8B279B2132C4748E897BA9D5C27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F45CE91AABA41FC6A2D62AA39C6E4FBD;
+			remoteInfo = ARVideoKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03314E93DC4C63FFB9A040C99CB4BA7B /* Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0914818C8CBF4113E0288DA8B8395CEE /* Pods-voiceraFaceTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFaceTests-Info.plist"; sourceTree = "<group>"; };
+		01F97FF0E30735E59A1125D794D8B731 /* Generate+LivePhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Generate+LivePhoto.swift"; path = "ARVideoKit/Rendering/Live Photo/Generate+LivePhoto.swift"; sourceTree = "<group>"; };
+		0C249AF1525B8272702CE39A0AED9359 /* Pods-voiceraFaceTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFaceTests-Info.plist"; sourceTree = "<group>"; };
 		0CC061C362DA43576A7CCF0B6DCA95F4 /* Pods-voiceraFace */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-voiceraFace"; path = Pods_voiceraFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F489EAA833D27E0176232140E63444A /* Pods-voiceraFace-voiceraFaceUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-voiceraFace-voiceraFaceUITests.modulemap"; sourceTree = "<group>"; };
-		13CA68C58BB9A7CD8BECFE73038B60F6 /* Pods-voiceraFaceTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFaceTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1D8966AB45E5433126BDED7C3F863BF7 /* Pods-voiceraFaceTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-voiceraFaceTests-umbrella.h"; sourceTree = "<group>"; };
-		23B87D01B6BE202E15B24BDB313CA3FC /* Pods-voiceraFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFace.release.xcconfig"; sourceTree = "<group>"; };
-		3B708FBD0AD2A84F40FA7961E804C6BA /* Pods-voiceraFace-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-voiceraFace-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0EADB7FCDFE8A530B29418D1952E11A2 /* ARView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARView.swift; path = ARVideoKit/Sources/ARView.swift; sourceTree = "<group>"; };
+		0F9E4371020AF7E9BBE67E9DB9744A49 /* ARVideoOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARVideoOptions.swift; path = ARVideoKit/Enumerations/ARVideoOptions.swift; sourceTree = "<group>"; };
+		10D5E6B77A5B6E047BD874BFCF64A1C2 /* WritAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WritAR.swift; path = ARVideoKit/Rendering/Writer/WritAR.swift; sourceTree = "<group>"; };
+		183DAD829693BEF282052D46CB5152B7 /* Pods-voiceraFace-voiceraFaceUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-voiceraFace-voiceraFaceUITests-frameworks.sh"; sourceTree = "<group>"; };
+		25195FF281B9A1CA4EB9BD98EE56CF37 /* ARVideoKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARVideoKit.modulemap; sourceTree = "<group>"; };
+		27FCF15E190E405A7FC88EDE2E3AC587 /* QuickTimeMov.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTimeMov.swift; path = "ARVideoKit/Rendering/Live Photo/LoveLiver/QuickTimeMov.swift"; sourceTree = "<group>"; };
+		290184D47BBD4D0F70EC1753E9EBC70E /* Pods-voiceraFaceTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-voiceraFaceTests-umbrella.h"; sourceTree = "<group>"; };
+		295DDC26B0FC15DD8E301D0CAF0672BA /* UIImage+VideoBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+VideoBuffer.swift"; path = "ARVideoKit/Extensions/UIImage+VideoBuffer.swift"; sourceTree = "<group>"; };
+		2E3356A93547D68712E0EB02827FC01B /* Pods-voiceraFace-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-voiceraFace-acknowledgements.markdown"; sourceTree = "<group>"; };
+		36F08545FDC5749DF96E39CE7E0E13DE /* ARVideoKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ARVideoKit.h; path = ARVideoKit/ARVideoKit.h; sourceTree = "<group>"; };
+		37111205C310AFE4C80BD0BF37BD89A2 /* Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B3895A25BFC7F13361F782845BEB0B5 /* ARVideoKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ARVideoKit-Info.plist"; sourceTree = "<group>"; };
+		3CAA429677A9E5D8A2C8236C5F92C1A3 /* Pods-voiceraFace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-voiceraFace-dummy.m"; sourceTree = "<group>"; };
 		3CEF3670E2B67425A897EBFA775EC843 /* Pods-voiceraFace-voiceraFaceUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-voiceraFace-voiceraFaceUITests"; path = Pods_voiceraFace_voiceraFaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47E1FCA4E99E03C6C433B7F921670851 /* Pods-voiceraFaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFaceTests.release.xcconfig"; sourceTree = "<group>"; };
-		491CBDCE93ECFCDADD6417377656AEE8 /* Pods-voiceraFace-voiceraFaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFace-voiceraFaceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3FCDB597F29E9D1F2DDA9C0F34FA13EF /* Pods-voiceraFace-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFace-acknowledgements.plist"; sourceTree = "<group>"; };
+		40ABD907042ACC8DA5BCFE79579CD944 /* Pods-voiceraFaceTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-voiceraFaceTests.modulemap"; sourceTree = "<group>"; };
+		42B659FCBC32A57AD395A32A56B09B48 /* CGImage+Resize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGImage+Resize.swift"; path = "ARVideoKit/Extensions/CGImage+Resize.swift"; sourceTree = "<group>"; };
+		44495C614DCE92A03F297662C03ABEAA /* Pods-voiceraFace-voiceraFaceUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-voiceraFace-voiceraFaceUITests-dummy.m"; sourceTree = "<group>"; };
+		466ECD54AD25BC744F296DF268D9F78A /* WeakProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakProxy.swift; path = ARVideoKit/Utils/WeakProxy.swift; sourceTree = "<group>"; };
 		519AF1CBECC3C83D2336E7D965E2512C /* Pods-voiceraFaceTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-voiceraFaceTests"; path = Pods_voiceraFaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F54484A0B75C6A72AD2EC3FC50A60B6 /* Pods-voiceraFaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFaceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5663B9C21B45712F1CFEE517862181D4 /* Pods-voiceraFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFace.release.xcconfig"; sourceTree = "<group>"; };
+		5CC167A8693874101DCE600C5A28DEA0 /* Pods-voiceraFace-voiceraFaceUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-voiceraFace-voiceraFaceUITests-umbrella.h"; sourceTree = "<group>"; };
+		6963BA43FF905363CB37AD9DCCCE8620 /* Pods-voiceraFace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-voiceraFace-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7807519A46ED96F9B98FB75E2D5D3A4E /* Pods-voiceraFaceTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-voiceraFaceTests-dummy.m"; sourceTree = "<group>"; };
-		7C6F721577D5F5D23F6FC21237880E78 /* Pods-voiceraFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFace.debug.xcconfig"; sourceTree = "<group>"; };
-		924B51EE66100BEE6839C13DADB7785D /* Pods-voiceraFace-voiceraFaceUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFace-voiceraFaceUITests-Info.plist"; sourceTree = "<group>"; };
+		79C6948F3A98E66B20866F7CA4201D95 /* RenderARDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderARDelegate.swift; path = ARVideoKit/Protocols/RenderARDelegate.swift; sourceTree = "<group>"; };
+		7D83695A2B6A189297597259D72BE82E /* ARVideoKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARVideoKit-dummy.m"; sourceTree = "<group>"; };
+		8EF22585E3C20E09085A1B2C9B5CEC64 /* Pods-voiceraFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFace.debug.xcconfig"; sourceTree = "<group>"; };
+		9238AFC2F7C2F2258D8654DB605B5417 /* PHLivePhotoPlus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PHLivePhotoPlus.swift; path = "ARVideoKit/Rendering/Live Photo/PHLivePhotoPlus.swift"; sourceTree = "<group>"; };
+		9263134DFF1E18B08DF9654493E627E4 /* Pods-voiceraFace-voiceraFaceUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-voiceraFace-voiceraFaceUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		937A56EA97803DC595777232B3ADA0DD /* Pods-voiceraFace-voiceraFaceUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFace-voiceraFaceUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		94864FF1504446A675A44B3C582264BC /* Pods-voiceraFace-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFace-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A815C6AC32231DB182BFA8849EA018CF /* Pods-voiceraFaceTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-voiceraFaceTests.modulemap"; sourceTree = "<group>"; };
-		D86A7C24AD3862F08F9CBBC4DC3067A2 /* Pods-voiceraFace-voiceraFaceUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-voiceraFace-voiceraFaceUITests-umbrella.h"; sourceTree = "<group>"; };
-		E562F5AE3A1AEDE0CC92410C61626177 /* Pods-voiceraFace-voiceraFaceUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-voiceraFace-voiceraFaceUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EA499C7D19C0A7A1DC325833D2D7E332 /* Pods-voiceraFace-voiceraFaceUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-voiceraFace-voiceraFaceUITests-dummy.m"; sourceTree = "<group>"; };
-		EC4BEBF1400C7CB3EE7D6558753E3BCA /* Pods-voiceraFace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-voiceraFace-umbrella.h"; sourceTree = "<group>"; };
-		EFB33DB8C71CB9483761976B0AB577C1 /* Pods-voiceraFaceTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-voiceraFaceTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F7FA155642F7675B7583C614DD11B067 /* Pods-voiceraFace-voiceraFaceUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFace-voiceraFaceUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FA50753923C00A11D5352CEB28364174 /* Pods-voiceraFace-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFace-Info.plist"; sourceTree = "<group>"; };
-		FB693ABC8A321291C83FFE54DEB9ACC3 /* Pods-voiceraFace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-voiceraFace.modulemap"; sourceTree = "<group>"; };
-		FD1A85EDADA943C99BD3E82A74E0BB09 /* Pods-voiceraFace-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFace-acknowledgements.plist"; sourceTree = "<group>"; };
-		FE5BDF4D0993ED52BA2D503DC087733B /* Pods-voiceraFace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-voiceraFace-dummy.m"; sourceTree = "<group>"; };
+		A2E9CCD0B263C9C610372E5D4C3FBCB2 /* Pods-voiceraFace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-voiceraFace.modulemap"; sourceTree = "<group>"; };
+		AE7A8A2C517DF3004069599044DD41B5 /* Pods-voiceraFace-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-voiceraFace-frameworks.sh"; sourceTree = "<group>"; };
+		B33203ECCF809B7170160D412DA6D9D5 /* ARVideoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARVideoKit.release.xcconfig; sourceTree = "<group>"; };
+		B550A1275FD019FD2AED2F83102C01BA /* Pods-voiceraFaceTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-voiceraFaceTests-dummy.m"; sourceTree = "<group>"; };
+		BAC9888A3EDD37BC2EEF3E1ED6AFC525 /* Pods-voiceraFace-voiceraFaceUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-voiceraFace-voiceraFaceUITests.modulemap"; sourceTree = "<group>"; };
+		BF453CC971E9464E9343FF88A6796135 /* RecordARDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordARDelegate.swift; path = ARVideoKit/Protocols/RecordARDelegate.swift; sourceTree = "<group>"; };
+		C26C403CAF02EE9360804E842165E484 /* Pods-voiceraFace-voiceraFaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFace-voiceraFaceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C772370BA07A117EB4435299946403DF /* Pods-voiceraFaceTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-voiceraFaceTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C785BDC5AE76F41238D289E90600BC97 /* RecordAR+PhotoRender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RecordAR+PhotoRender.swift"; path = "ARVideoKit/Extensions/RecordAR+PhotoRender.swift"; sourceTree = "<group>"; };
+		C7D39C6F17CB3A57F7D5C2D0C0A62110 /* Pods-voiceraFace-voiceraFaceUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFace-voiceraFaceUITests-Info.plist"; sourceTree = "<group>"; };
+		C97D9D0A3DDFB9940DAE9778F7993196 /* ARVideoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARVideoKit.debug.xcconfig; sourceTree = "<group>"; };
+		CC7D27C9FF71B1CA3F80B81C6BB633AF /* JPEG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JPEG.swift; path = "ARVideoKit/Rendering/Live Photo/LoveLiver/JPEG.swift"; sourceTree = "<group>"; };
+		CD6F6A59EED48D93C7A3EC0FC77F5982 /* ARVideoKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARVideoKit-prefix.pch"; sourceTree = "<group>"; };
+		CF07453909CF6D211A6EACA952038EC3 /* ARInputViewOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARInputViewOptions.swift; path = ARVideoKit/Enumerations/ARInputViewOptions.swift; sourceTree = "<group>"; };
+		D187298F82E4FED8343DDEFC6C20341B /* Pods-voiceraFaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFaceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3E0E1672362F5E0E55B4405B0228951 /* UIView+isType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+isType.swift"; path = "ARVideoKit/Extensions/UIView+isType.swift"; sourceTree = "<group>"; };
+		D8F75CC297DB104958FCD18838E7E3DC /* Generate+GIF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Generate+GIF.swift"; path = "ARVideoKit/Rendering/GIF/Generate+GIF.swift"; sourceTree = "<group>"; };
+		DF0774D020EFFB0BF7F377EA8A1312EE /* RenderAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderAR.swift; path = ARVideoKit/Rendering/RenderAR.swift; sourceTree = "<group>"; };
+		DFD7A35B67F57F3D5BEB2C210EA50455 /* UIViewController+hasType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+hasType.swift"; path = "ARVideoKit/Extensions/UIViewController+hasType.swift"; sourceTree = "<group>"; };
+		EF201A0FEA60D5BA813829F5C2973695 /* video.scnassets */ = {isa = PBXFileReference; includeInIndex = 1; name = video.scnassets; path = ARVideoKit/Assets/video.scnassets; sourceTree = "<group>"; };
+		F001F80440D622E020ED478C20AD93F7 /* Pods-voiceraFaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-voiceraFaceTests.release.xcconfig"; sourceTree = "<group>"; };
+		F56A0F296CEA99284DBAB0EB4494BA00 /* Pods-voiceraFaceTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-voiceraFaceTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F69AB22AC8C89D593F26792E4430F7EF /* ViewAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAR.swift; path = ARVideoKit/Sources/ViewAR.swift; sourceTree = "<group>"; };
+		FAAABB68A7FA1FB1A251480879617C6A /* ARVideoKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARVideoKit; path = ARVideoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0A40573002B4B2395F6D9B183788F2 /* ARVideoKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARVideoKit-umbrella.h"; sourceTree = "<group>"; };
+		FF89CB24556BAB2ED90EB7A61A29F22A /* RecordAR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordAR.swift; path = ARVideoKit/Sources/RecordAR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		15372C12F97E0721CFAFE6A67BF84F08 /* Frameworks */ = {
+		372CFC2F1462AD5529645F10A3C08332 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B23C949D7E1BB45614F33482A6BF6127 /* Foundation.framework in Frameworks */,
+				0D9EA750DAC9811DF7E6CE4859A26737 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6979775827576760338397C487387227 /* Frameworks */ = {
+		78725BF62227DDD37AAC515AD03D5AF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A888C33D9DA299600578CFC54AF3611A /* Foundation.framework in Frameworks */,
+				FA48FAECDF185D7FDEA23EFD18E6AF20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D8A572FDDCE5177E141D629B80DF162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37ADF003277A3677FBA9D6B215E5AFE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,17 +167,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		486A65682E790E991E3ADCA6A6441CD3 /* Pods-voiceraFace-voiceraFaceUITests */ = {
+		369A4C2EA758E081DA5FC71E336E264A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0F489EAA833D27E0176232140E63444A /* Pods-voiceraFace-voiceraFaceUITests.modulemap */,
-				E562F5AE3A1AEDE0CC92410C61626177 /* Pods-voiceraFace-voiceraFaceUITests-acknowledgements.markdown */,
-				F7FA155642F7675B7583C614DD11B067 /* Pods-voiceraFace-voiceraFaceUITests-acknowledgements.plist */,
-				EA499C7D19C0A7A1DC325833D2D7E332 /* Pods-voiceraFace-voiceraFaceUITests-dummy.m */,
-				924B51EE66100BEE6839C13DADB7785D /* Pods-voiceraFace-voiceraFaceUITests-Info.plist */,
-				D86A7C24AD3862F08F9CBBC4DC3067A2 /* Pods-voiceraFace-voiceraFaceUITests-umbrella.h */,
-				03314E93DC4C63FFB9A040C99CB4BA7B /* Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig */,
-				491CBDCE93ECFCDADD6417377656AEE8 /* Pods-voiceraFace-voiceraFaceUITests.release.xcconfig */,
+				EF201A0FEA60D5BA813829F5C2973695 /* video.scnassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		42BAF8E8F198A90233003604DD868981 /* Pods-voiceraFace */ = {
+			isa = PBXGroup;
+			children = (
+				A2E9CCD0B263C9C610372E5D4C3FBCB2 /* Pods-voiceraFace.modulemap */,
+				2E3356A93547D68712E0EB02827FC01B /* Pods-voiceraFace-acknowledgements.markdown */,
+				3FCDB597F29E9D1F2DDA9C0F34FA13EF /* Pods-voiceraFace-acknowledgements.plist */,
+				3CAA429677A9E5D8A2C8236C5F92C1A3 /* Pods-voiceraFace-dummy.m */,
+				AE7A8A2C517DF3004069599044DD41B5 /* Pods-voiceraFace-frameworks.sh */,
+				94864FF1504446A675A44B3C582264BC /* Pods-voiceraFace-Info.plist */,
+				6963BA43FF905363CB37AD9DCCCE8620 /* Pods-voiceraFace-umbrella.h */,
+				8EF22585E3C20E09085A1B2C9B5CEC64 /* Pods-voiceraFace.debug.xcconfig */,
+				5663B9C21B45712F1CFEE517862181D4 /* Pods-voiceraFace.release.xcconfig */,
+			);
+			name = "Pods-voiceraFace";
+			path = "Target Support Files/Pods-voiceraFace";
+			sourceTree = "<group>";
+		};
+		4AD708FC6E62ED351E073902026F477E /* Pods-voiceraFace-voiceraFaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAC9888A3EDD37BC2EEF3E1ED6AFC525 /* Pods-voiceraFace-voiceraFaceUITests.modulemap */,
+				9263134DFF1E18B08DF9654493E627E4 /* Pods-voiceraFace-voiceraFaceUITests-acknowledgements.markdown */,
+				937A56EA97803DC595777232B3ADA0DD /* Pods-voiceraFace-voiceraFaceUITests-acknowledgements.plist */,
+				44495C614DCE92A03F297662C03ABEAA /* Pods-voiceraFace-voiceraFaceUITests-dummy.m */,
+				183DAD829693BEF282052D46CB5152B7 /* Pods-voiceraFace-voiceraFaceUITests-frameworks.sh */,
+				C7D39C6F17CB3A57F7D5C2D0C0A62110 /* Pods-voiceraFace-voiceraFaceUITests-Info.plist */,
+				5CC167A8693874101DCE600C5A28DEA0 /* Pods-voiceraFace-voiceraFaceUITests-umbrella.h */,
+				37111205C310AFE4C80BD0BF37BD89A2 /* Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig */,
+				C26C403CAF02EE9360804E842165E484 /* Pods-voiceraFace-voiceraFaceUITests.release.xcconfig */,
 			);
 			name = "Pods-voiceraFace-voiceraFaceUITests";
 			path = "Target Support Files/Pods-voiceraFace-voiceraFaceUITests";
@@ -112,46 +217,95 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		75445A8D2874BBAC44FAE779336406E8 /* Pods-voiceraFaceTests */ = {
+		5E7EE34C96862FBE799972AC9A9D5491 /* Pods-voiceraFaceTests */ = {
 			isa = PBXGroup;
 			children = (
-				A815C6AC32231DB182BFA8849EA018CF /* Pods-voiceraFaceTests.modulemap */,
-				EFB33DB8C71CB9483761976B0AB577C1 /* Pods-voiceraFaceTests-acknowledgements.markdown */,
-				13CA68C58BB9A7CD8BECFE73038B60F6 /* Pods-voiceraFaceTests-acknowledgements.plist */,
-				7807519A46ED96F9B98FB75E2D5D3A4E /* Pods-voiceraFaceTests-dummy.m */,
-				0914818C8CBF4113E0288DA8B8395CEE /* Pods-voiceraFaceTests-Info.plist */,
-				1D8966AB45E5433126BDED7C3F863BF7 /* Pods-voiceraFaceTests-umbrella.h */,
-				6F54484A0B75C6A72AD2EC3FC50A60B6 /* Pods-voiceraFaceTests.debug.xcconfig */,
-				47E1FCA4E99E03C6C433B7F921670851 /* Pods-voiceraFaceTests.release.xcconfig */,
+				40ABD907042ACC8DA5BCFE79579CD944 /* Pods-voiceraFaceTests.modulemap */,
+				C772370BA07A117EB4435299946403DF /* Pods-voiceraFaceTests-acknowledgements.markdown */,
+				F56A0F296CEA99284DBAB0EB4494BA00 /* Pods-voiceraFaceTests-acknowledgements.plist */,
+				B550A1275FD019FD2AED2F83102C01BA /* Pods-voiceraFaceTests-dummy.m */,
+				0C249AF1525B8272702CE39A0AED9359 /* Pods-voiceraFaceTests-Info.plist */,
+				290184D47BBD4D0F70EC1753E9EBC70E /* Pods-voiceraFaceTests-umbrella.h */,
+				D187298F82E4FED8343DDEFC6C20341B /* Pods-voiceraFaceTests.debug.xcconfig */,
+				F001F80440D622E020ED478C20AD93F7 /* Pods-voiceraFaceTests.release.xcconfig */,
 			);
 			name = "Pods-voiceraFaceTests";
 			path = "Target Support Files/Pods-voiceraFaceTests";
 			sourceTree = "<group>";
 		};
-		7B9FF0641443CBD5A9A4C82294187326 /* Targets Support Files */ = {
+		696584180EFBD3156376A7C2FB6B77DC /* ARVideoKit */ = {
 			isa = PBXGroup;
 			children = (
-				B6D4285DAE7AB3E0A8907F79FF9FECE7 /* Pods-voiceraFace */,
-				486A65682E790E991E3ADCA6A6441CD3 /* Pods-voiceraFace-voiceraFaceUITests */,
-				75445A8D2874BBAC44FAE779336406E8 /* Pods-voiceraFaceTests */,
+				CF07453909CF6D211A6EACA952038EC3 /* ARInputViewOptions.swift */,
+				36F08545FDC5749DF96E39CE7E0E13DE /* ARVideoKit.h */,
+				0F9E4371020AF7E9BBE67E9DB9744A49 /* ARVideoOptions.swift */,
+				0EADB7FCDFE8A530B29418D1952E11A2 /* ARView.swift */,
+				42B659FCBC32A57AD395A32A56B09B48 /* CGImage+Resize.swift */,
+				D8F75CC297DB104958FCD18838E7E3DC /* Generate+GIF.swift */,
+				01F97FF0E30735E59A1125D794D8B731 /* Generate+LivePhoto.swift */,
+				CC7D27C9FF71B1CA3F80B81C6BB633AF /* JPEG.swift */,
+				9238AFC2F7C2F2258D8654DB605B5417 /* PHLivePhotoPlus.swift */,
+				27FCF15E190E405A7FC88EDE2E3AC587 /* QuickTimeMov.swift */,
+				FF89CB24556BAB2ED90EB7A61A29F22A /* RecordAR.swift */,
+				C785BDC5AE76F41238D289E90600BC97 /* RecordAR+PhotoRender.swift */,
+				BF453CC971E9464E9343FF88A6796135 /* RecordARDelegate.swift */,
+				DF0774D020EFFB0BF7F377EA8A1312EE /* RenderAR.swift */,
+				79C6948F3A98E66B20866F7CA4201D95 /* RenderARDelegate.swift */,
+				295DDC26B0FC15DD8E301D0CAF0672BA /* UIImage+VideoBuffer.swift */,
+				D3E0E1672362F5E0E55B4405B0228951 /* UIView+isType.swift */,
+				DFD7A35B67F57F3D5BEB2C210EA50455 /* UIViewController+hasType.swift */,
+				F69AB22AC8C89D593F26792E4430F7EF /* ViewAR.swift */,
+				466ECD54AD25BC744F296DF268D9F78A /* WeakProxy.swift */,
+				10D5E6B77A5B6E047BD874BFCF64A1C2 /* WritAR.swift */,
+				369A4C2EA758E081DA5FC71E336E264A /* Resources */,
+				8FEEE11C83C21511176E0135361203EF /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = ARVideoKit;
+			path = ARVideoKit;
 			sourceTree = "<group>";
 		};
-		B6D4285DAE7AB3E0A8907F79FF9FECE7 /* Pods-voiceraFace */ = {
+		8FEEE11C83C21511176E0135361203EF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FB693ABC8A321291C83FFE54DEB9ACC3 /* Pods-voiceraFace.modulemap */,
-				3B708FBD0AD2A84F40FA7961E804C6BA /* Pods-voiceraFace-acknowledgements.markdown */,
-				FD1A85EDADA943C99BD3E82A74E0BB09 /* Pods-voiceraFace-acknowledgements.plist */,
-				FE5BDF4D0993ED52BA2D503DC087733B /* Pods-voiceraFace-dummy.m */,
-				FA50753923C00A11D5352CEB28364174 /* Pods-voiceraFace-Info.plist */,
-				EC4BEBF1400C7CB3EE7D6558753E3BCA /* Pods-voiceraFace-umbrella.h */,
-				7C6F721577D5F5D23F6FC21237880E78 /* Pods-voiceraFace.debug.xcconfig */,
-				23B87D01B6BE202E15B24BDB313CA3FC /* Pods-voiceraFace.release.xcconfig */,
+				25195FF281B9A1CA4EB9BD98EE56CF37 /* ARVideoKit.modulemap */,
+				7D83695A2B6A189297597259D72BE82E /* ARVideoKit-dummy.m */,
+				3B3895A25BFC7F13361F782845BEB0B5 /* ARVideoKit-Info.plist */,
+				CD6F6A59EED48D93C7A3EC0FC77F5982 /* ARVideoKit-prefix.pch */,
+				FC0A40573002B4B2395F6D9B183788F2 /* ARVideoKit-umbrella.h */,
+				C97D9D0A3DDFB9940DAE9778F7993196 /* ARVideoKit.debug.xcconfig */,
+				B33203ECCF809B7170160D412DA6D9D5 /* ARVideoKit.release.xcconfig */,
 			);
-			name = "Pods-voiceraFace";
-			path = "Target Support Files/Pods-voiceraFace";
+			name = "Support Files";
+			path = "../Target Support Files/ARVideoKit";
+			sourceTree = "<group>";
+		};
+		910FB39682E1DE5B689C6B86509DDB42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAAABB68A7FA1FB1A251480879617C6A /* ARVideoKit */,
+				0CC061C362DA43576A7CCF0B6DCA95F4 /* Pods-voiceraFace */,
+				3CEF3670E2B67425A897EBFA775EC843 /* Pods-voiceraFace-voiceraFaceUITests */,
+				519AF1CBECC3C83D2336E7D965E2512C /* Pods-voiceraFaceTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91507DFD051ED81A747066B9A5222ACD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				696584180EFBD3156376A7C2FB6B77DC /* ARVideoKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA0E670AE3C7970235392E2AC87DDCF5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42BAF8E8F198A90233003604DD868981 /* Pods-voiceraFace */,
+				4AD708FC6E62ED351E073902026F477E /* Pods-voiceraFace-voiceraFaceUITests */,
+				5E7EE34C96862FBE799972AC9A9D5491 /* Pods-voiceraFaceTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -159,8 +313,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				E30EDA30E0436A5637DEB932353A136E /* Products */,
-				7B9FF0641443CBD5A9A4C82294187326 /* Targets Support Files */,
+				91507DFD051ED81A747066B9A5222ACD /* Pods */,
+				910FB39682E1DE5B689C6B86509DDB42 /* Products */,
+				CA0E670AE3C7970235392E2AC87DDCF5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,32 +327,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E30EDA30E0436A5637DEB932353A136E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0CC061C362DA43576A7CCF0B6DCA95F4 /* Pods-voiceraFace */,
-				3CEF3670E2B67425A897EBFA775EC843 /* Pods-voiceraFace-voiceraFaceUITests */,
-				519AF1CBECC3C83D2336E7D965E2512C /* Pods-voiceraFaceTests */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0BFAF792C66859CE69BEA5D68E13B45D /* Headers */ = {
+		01045D341BFC69F0E453DDB3CB58A135 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8886FB37D682C93608CC32D792F156C /* Pods-voiceraFace-voiceraFaceUITests-umbrella.h in Headers */,
+				D91EAB0BC58383A947F735E7BFE6134C /* Pods-voiceraFace-voiceraFaceUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34B1DCCA91422406BDE3B4EC1DFEAD6C /* Headers */ = {
+		374F013C9D45D67BB05A15C357E51D86 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E1B356A7596AC9974500E6EB07D846 /* Pods-voiceraFace-umbrella.h in Headers */,
+				003670ECFC3EE087BF0DCB46BA3B3BC8 /* Pods-voiceraFace-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,21 +354,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D7ADB33D05E7060A2ED9724E7B201338 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA96FF159C49139E6B7CB1DA7CEFD2D /* ARVideoKit.h in Headers */,
+				88ECF9A22D1DC1C7E9F7C9DFB3EB232D /* ARVideoKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		044D6517EC1AB1884A41528244FE470D /* Pods-voiceraFace */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CFF211219614332895C4E227B2A20D7 /* Build configuration list for PBXNativeTarget "Pods-voiceraFace" */;
+			buildConfigurationList = 333800CB5A4A2E32BD33022D89437634 /* Build configuration list for PBXNativeTarget "Pods-voiceraFace" */;
 			buildPhases = (
-				34B1DCCA91422406BDE3B4EC1DFEAD6C /* Headers */,
-				BF921D7BCDCAB07D11A5BA6B98DD9B4B /* Sources */,
-				6979775827576760338397C487387227 /* Frameworks */,
-				3491B6BE3FF99D07FAECBDE7F5048D7D /* Resources */,
+				374F013C9D45D67BB05A15C357E51D86 /* Headers */,
+				7BF9716A6CCEBFCD156BE9BED37D9002 /* Sources */,
+				78725BF62227DDD37AAC515AD03D5AF7 /* Frameworks */,
+				E06CB30F0738D6BCCB3A55420448297A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8852AD40EDDF537A5B661F6673E08295 /* PBXTargetDependency */,
 			);
 			name = "Pods-voiceraFace";
 			productName = Pods_voiceraFace;
@@ -242,7 +397,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				509E606C2D0873521709EE6C773E2A6E /* PBXTargetDependency */,
+				6A40956E6602173A815FCE6987FB136F /* PBXTargetDependency */,
 			);
 			name = "Pods-voiceraFaceTests";
 			productName = Pods_voiceraFaceTests;
@@ -251,20 +406,39 @@
 		};
 		CC06543662765F1839E9173A0A338C5C /* Pods-voiceraFace-voiceraFaceUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1BEF64BBF088B7A7B2AC2834641B146 /* Build configuration list for PBXNativeTarget "Pods-voiceraFace-voiceraFaceUITests" */;
+			buildConfigurationList = BB674BBCB7032C4DF337139CF2C41A89 /* Build configuration list for PBXNativeTarget "Pods-voiceraFace-voiceraFaceUITests" */;
 			buildPhases = (
-				0BFAF792C66859CE69BEA5D68E13B45D /* Headers */,
-				A59F8A744DD7F7EBFFE4F07F831AD06E /* Sources */,
-				15372C12F97E0721CFAFE6A67BF84F08 /* Frameworks */,
-				1E45994C786FCE42AEBB2C24706ED4D7 /* Resources */,
+				01045D341BFC69F0E453DDB3CB58A135 /* Headers */,
+				2D3E6E9C6CA5BE25F04A90398ADD59E2 /* Sources */,
+				7D8A572FDDCE5177E141D629B80DF162 /* Frameworks */,
+				88C3DD0C82FB70D71D58E11CF1781886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BCC6D9E8583532AB5C1802A3CD0FE7D /* PBXTargetDependency */,
+			);
+			name = "Pods-voiceraFace-voiceraFaceUITests";
+			productName = Pods_voiceraFace_voiceraFaceUITests;
+			productReference = 3CEF3670E2B67425A897EBFA775EC843 /* Pods-voiceraFace-voiceraFaceUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		F45CE91AABA41FC6A2D62AA39C6E4FBD /* ARVideoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E438AE5E181639643520E7E6B1D1DDCE /* Build configuration list for PBXNativeTarget "ARVideoKit" */;
+			buildPhases = (
+				D7ADB33D05E7060A2ED9724E7B201338 /* Headers */,
+				615427F11C58BD504482733766D748FA /* Sources */,
+				372CFC2F1462AD5529645F10A3C08332 /* Frameworks */,
+				9048B2850F498361D6E97EC4E9E4776D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-voiceraFace-voiceraFaceUITests";
-			productName = Pods_voiceraFace_voiceraFaceUITests;
-			productReference = 3CEF3670E2B67425A897EBFA775EC843 /* Pods-voiceraFace-voiceraFaceUITests */;
+			name = ARVideoKit;
+			productName = ARVideoKit;
+			productReference = FAAABB68A7FA1FB1A251480879617C6A /* ARVideoKit */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -285,10 +459,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E30EDA30E0436A5637DEB932353A136E /* Products */;
+			productRefGroup = 910FB39682E1DE5B689C6B86509DDB42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				F45CE91AABA41FC6A2D62AA39C6E4FBD /* ARVideoKit */,
 				044D6517EC1AB1884A41528244FE470D /* Pods-voiceraFace */,
 				CC06543662765F1839E9173A0A338C5C /* Pods-voiceraFace-voiceraFaceUITests */,
 				6B277ED7FCA58B1EFC243B4E7F8A02F5 /* Pods-voiceraFaceTests */,
@@ -297,21 +472,29 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1E45994C786FCE42AEBB2C24706ED4D7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3491B6BE3FF99D07FAECBDE7F5048D7D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6345322F36624620CF4DABA97825E17C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88C3DD0C82FB70D71D58E11CF1781886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9048B2850F498361D6E97EC4E9E4776D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC536DD176B0C06984EF5CACF889001 /* video.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E06CB30F0738D6BCCB3A55420448297A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,6 +504,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2D3E6E9C6CA5BE25F04A90398ADD59E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CC58A5CB7D42C15C6113A2979D013E /* Pods-voiceraFace-voiceraFaceUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		615427F11C58BD504482733766D748FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F07102D8F0360A90989FCC3B36CD37C4 /* ARInputViewOptions.swift in Sources */,
+				CBD78AC1534816992376AFAE16A6A5FF /* ARVideoKit-dummy.m in Sources */,
+				39F6A34FBA8B1B0ACC4B996380B4309B /* ARVideoOptions.swift in Sources */,
+				2B52043820DD2341B2750B4D15BB1748 /* ARView.swift in Sources */,
+				6EFADCA52ACAD2C3FEA56C09F18BBD3E /* CGImage+Resize.swift in Sources */,
+				0FC2294D4412500D5F4D82F44852001D /* Generate+GIF.swift in Sources */,
+				620F10A7197B781737F4158360792EF6 /* Generate+LivePhoto.swift in Sources */,
+				20CEB2DBF5B617A386A8B9407D1A7927 /* JPEG.swift in Sources */,
+				A85F989D41C8F315ED25AE4769305DAD /* PHLivePhotoPlus.swift in Sources */,
+				06CD00D26F2E0C7760ABEEDF3BA72182 /* QuickTimeMov.swift in Sources */,
+				791BBDB458AF1A62C43D967B5D86227F /* RecordAR.swift in Sources */,
+				D658C5298CED78F5DBD81F39CF24C61C /* RecordAR+PhotoRender.swift in Sources */,
+				9F76690C17F800AF094CC83DBDCB6C91 /* RecordARDelegate.swift in Sources */,
+				721D4751DAE99D4E579A3FA9820B2697 /* RenderAR.swift in Sources */,
+				4D04D81CFEBE95F9EAE6863C68A62F83 /* RenderARDelegate.swift in Sources */,
+				EC1591CC6097411C8EA5C486342DA0DA /* UIImage+VideoBuffer.swift in Sources */,
+				B5D44E2152ACD0D6F6578C5470376112 /* UIView+isType.swift in Sources */,
+				53C8649644076B208A5C553CBCA0EFBB /* UIViewController+hasType.swift in Sources */,
+				B9668B8C206EE03DB454D027479D2CFC /* ViewAR.swift in Sources */,
+				9490CF00B76C5FE264302D3867588552 /* WeakProxy.swift in Sources */,
+				EA0030915530AA719701E7096F3C897B /* WritAR.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BF9716A6CCEBFCD156BE9BED37D9002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A4260816D0DB2DCD8AE1E991093D29 /* Pods-voiceraFace-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B92868167507348690D66D7661F3802 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,71 +556,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A59F8A744DD7F7EBFFE4F07F831AD06E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8CD14D92D659CBEEA119A95BE6692302 /* Pods-voiceraFace-voiceraFaceUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF921D7BCDCAB07D11A5BA6B98DD9B4B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				752301CAF6D01EF09DC00EFE01D23C0A /* Pods-voiceraFace-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		509E606C2D0873521709EE6C773E2A6E /* PBXTargetDependency */ = {
+		6A40956E6602173A815FCE6987FB136F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-voiceraFace";
 			target = 044D6517EC1AB1884A41528244FE470D /* Pods-voiceraFace */;
-			targetProxy = C0A57E5C170B7523886867A600F0E0AD /* PBXContainerItemProxy */;
+			targetProxy = CF1DF5E0E0E0847C9CC44F71E8E40E29 /* PBXContainerItemProxy */;
+		};
+		8852AD40EDDF537A5B661F6673E08295 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARVideoKit;
+			target = F45CE91AABA41FC6A2D62AA39C6E4FBD /* ARVideoKit */;
+			targetProxy = D9E2F8B279B2132C4748E897BA9D5C27 /* PBXContainerItemProxy */;
+		};
+		8BCC6D9E8583532AB5C1802A3CD0FE7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARVideoKit;
+			target = F45CE91AABA41FC6A2D62AA39C6E4FBD /* ARVideoKit */;
+			targetProxy = 25F341C10AB25BBFEDF9ABE1873155DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3943EBB50325A8DBF49D1D491FA45765 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03314E93DC4C63FFB9A040C99CB4BA7B /* Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-voiceraFace-voiceraFaceUITests/Pods-voiceraFace-voiceraFaceUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-voiceraFace-voiceraFaceUITests/Pods-voiceraFace-voiceraFaceUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		44A4B2FB6211B90C1949A44A381F6D1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -456,9 +642,9 @@
 			};
 			name = Release;
 		};
-		5F5D39E92ACBB1E706441BB54E50E37F /* Debug */ = {
+		4B17EF71D59FFDE852EEB2F3D0139828 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C6F721577D5F5D23F6FC21237880E78 /* Pods-voiceraFace.debug.xcconfig */;
+			baseConfigurationReference = 5663B9C21B45712F1CFEE517862181D4 /* Pods-voiceraFace.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -488,14 +674,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		854DDBDCCA108AA38082AA93CD060020 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F54484A0B75C6A72AD2EC3FC50A60B6 /* Pods-voiceraFaceTests.debug.xcconfig */;
+			baseConfigurationReference = D187298F82E4FED8343DDEFC6C20341B /* Pods-voiceraFaceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -529,6 +716,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		9BDA917EFCD631332BB08674B1057423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B33203ECCF809B7170160D412DA6D9D5 /* ARVideoKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARVideoKit/ARVideoKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARVideoKit/ARVideoKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ARVideoKit/ARVideoKit.modulemap";
+				PRODUCT_MODULE_NAME = ARVideoKit;
+				PRODUCT_NAME = ARVideoKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		A0DC1C2C814704734F83EAB35BB20B21 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -596,9 +819,9 @@
 			};
 			name = Debug;
 		};
-		D823D1651A0D5206BF6BC0D899B2D17A /* Release */ = {
+		AE8381462ABF19C29AA356EF6EC38C4A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23B87D01B6BE202E15B24BDB313CA3FC /* Pods-voiceraFace.release.xcconfig */;
+			baseConfigurationReference = 8EF22585E3C20E09085A1B2C9B5CEC64 /* Pods-voiceraFace.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -628,53 +851,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		DC57F39C22B0280D5DBC6DC9CF9CC112 /* Release */ = {
+		C5F4BA2F71853562BDDB47418D6508F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47E1FCA4E99E03C6C433B7F921670851 /* Pods-voiceraFaceTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-voiceraFaceTests/Pods-voiceraFaceTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-voiceraFaceTests/Pods-voiceraFaceTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F6B2F46965BB024A153A518A0237610C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 491CBDCE93ECFCDADD6417377656AEE8 /* Pods-voiceraFace-voiceraFaceUITests.release.xcconfig */;
+			baseConfigurationReference = C26C403CAF02EE9360804E842165E484 /* Pods-voiceraFace-voiceraFaceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -710,14 +894,124 @@
 			};
 			name = Release;
 		};
+		C912B1B656335EE5BEC2404529420BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37111205C310AFE4C80BD0BF37BD89A2 /* Pods-voiceraFace-voiceraFaceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-voiceraFace-voiceraFaceUITests/Pods-voiceraFace-voiceraFaceUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-voiceraFace-voiceraFaceUITests/Pods-voiceraFace-voiceraFaceUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D26991B594D6C3C2CAA208D4723D5F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C97D9D0A3DDFB9940DAE9778F7993196 /* ARVideoKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARVideoKit/ARVideoKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARVideoKit/ARVideoKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ARVideoKit/ARVideoKit.modulemap";
+				PRODUCT_MODULE_NAME = ARVideoKit;
+				PRODUCT_NAME = ARVideoKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC57F39C22B0280D5DBC6DC9CF9CC112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F001F80440D622E020ED478C20AD93F7 /* Pods-voiceraFaceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-voiceraFaceTests/Pods-voiceraFaceTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-voiceraFaceTests/Pods-voiceraFaceTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CFF211219614332895C4E227B2A20D7 /* Build configuration list for PBXNativeTarget "Pods-voiceraFace" */ = {
+		333800CB5A4A2E32BD33022D89437634 /* Build configuration list for PBXNativeTarget "Pods-voiceraFace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F5D39E92ACBB1E706441BB54E50E37F /* Debug */,
-				D823D1651A0D5206BF6BC0D899B2D17A /* Release */,
+				AE8381462ABF19C29AA356EF6EC38C4A /* Debug */,
+				4B17EF71D59FFDE852EEB2F3D0139828 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -731,11 +1025,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1BEF64BBF088B7A7B2AC2834641B146 /* Build configuration list for PBXNativeTarget "Pods-voiceraFace-voiceraFaceUITests" */ = {
+		BB674BBCB7032C4DF337139CF2C41A89 /* Build configuration list for PBXNativeTarget "Pods-voiceraFace-voiceraFaceUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3943EBB50325A8DBF49D1D491FA45765 /* Debug */,
-				F6B2F46965BB024A153A518A0237610C /* Release */,
+				C912B1B656335EE5BEC2404529420BD6 /* Debug */,
+				C5F4BA2F71853562BDDB47418D6508F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -745,6 +1039,15 @@
 			buildConfigurations = (
 				854DDBDCCA108AA38082AA93CD060020 /* Debug */,
 				DC57F39C22B0280D5DBC6DC9CF9CC112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E438AE5E181639643520E7E6B1D1DDCE /* Build configuration list for PBXNativeTarget "ARVideoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26991B594D6C3C2CAA208D4723D5F94 /* Debug */,
+				9BDA917EFCD631332BB08674B1057423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

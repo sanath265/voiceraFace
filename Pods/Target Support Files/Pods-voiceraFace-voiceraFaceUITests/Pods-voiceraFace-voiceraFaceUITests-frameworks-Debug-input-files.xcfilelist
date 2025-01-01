@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-voiceraFace-voiceraFaceUITests/Pods-voiceraFace-voiceraFaceUITests-frameworks.sh
-${BUILT_PRODUCTS_DIR}/ARCapture/ARCapture.framework
+${BUILT_PRODUCTS_DIR}/ARVideoKit/ARVideoKit.framework

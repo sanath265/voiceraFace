@@ -16,8 +16,6 @@
 		0236A7CA2D24661C004319DC /* FaceEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7B72D24661C004319DC /* FaceEditorViewController.xib */; };
 		0236A7CB2D24661C004319DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BB2D24661C004319DC /* Assets.xcassets */; };
 		0236A7CD2D24661C004319DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BE2D24661C004319DC /* LaunchScreen.storyboard */; };
-		0236A7CE2D24661C004319DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BF2D24661C004319DC /* Main.storyboard */; };
-		0236A7CF2D24661C004319DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BF2D24661C004319DC /* Main.storyboard */; };
 		0236A7D02D24661C004319DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BB2D24661C004319DC /* Assets.xcassets */; };
 		0236A7D12D24661C004319DC /* FaceEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7B72D24661C004319DC /* FaceEditorViewController.xib */; };
 		0236A7D22D24661C004319DC /* FaceEditorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7B42D24661C004319DC /* FaceEditorCollectionViewCell.xib */; };
@@ -25,7 +23,6 @@
 		0236A7D42D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7B32D24661C004319DC /* FaceEditorCollectionViewCell.swift */; };
 		0236A7D52D24661C004319DC /* FaceEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7B62D24661C004319DC /* FaceEditorViewController.swift */; };
 		0236A7D62D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7B32D24661C004319DC /* FaceEditorCollectionViewCell.swift */; };
-		0236A7D72D24661C004319DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BF2D24661C004319DC /* Main.storyboard */; };
 		0236A7D82D24661C004319DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BB2D24661C004319DC /* Assets.xcassets */; };
 		0236A7D92D24661C004319DC /* FaceEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7B72D24661C004319DC /* FaceEditorViewController.xib */; };
 		0236A7DA2D24661C004319DC /* FaceEditorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7B42D24661C004319DC /* FaceEditorCollectionViewCell.xib */; };
@@ -38,6 +35,24 @@
 		025139F42D24972000B05889 /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F32D24971C00B05889 /* FaceNode.swift */; };
 		025139F52D24972000B05889 /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F32D24971C00B05889 /* FaceNode.swift */; };
 		025139F62D24972000B05889 /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F32D24971C00B05889 /* FaceNode.swift */; };
+		025139FA2D25CB6000B05889 /* RecordingGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025139F92D25CB6000B05889 /* RecordingGridViewController.xib */; };
+		025139FB2D25CB6000B05889 /* RecordingGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F82D25CB6000B05889 /* RecordingGridViewController.swift */; };
+		025139FC2D25CB6000B05889 /* RecordingGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025139F92D25CB6000B05889 /* RecordingGridViewController.xib */; };
+		025139FD2D25CB6000B05889 /* RecordingGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F82D25CB6000B05889 /* RecordingGridViewController.swift */; };
+		025139FE2D25CB6000B05889 /* RecordingGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F82D25CB6000B05889 /* RecordingGridViewController.swift */; };
+		025139FF2D25CB6000B05889 /* RecordingGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025139F92D25CB6000B05889 /* RecordingGridViewController.xib */; };
+		02513A032D25CBA100B05889 /* RecordingGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02513A022D25CBA100B05889 /* RecordingGridCollectionViewCell.xib */; };
+		02513A042D25CBA100B05889 /* RecordingGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02513A012D25CBA100B05889 /* RecordingGridCollectionViewCell.swift */; };
+		02513A052D25CBA100B05889 /* RecordingGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02513A022D25CBA100B05889 /* RecordingGridCollectionViewCell.xib */; };
+		02513A062D25CBA100B05889 /* RecordingGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02513A012D25CBA100B05889 /* RecordingGridCollectionViewCell.swift */; };
+		02513A072D25CBA100B05889 /* RecordingGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02513A022D25CBA100B05889 /* RecordingGridCollectionViewCell.xib */; };
+		02513A082D25CBA100B05889 /* RecordingGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02513A012D25CBA100B05889 /* RecordingGridCollectionViewCell.swift */; };
+		02513A0C2D25CFE300B05889 /* RecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02513A0B2D25CFDF00B05889 /* RecordingModel.swift */; };
+		02513A0D2D25CFE300B05889 /* RecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02513A0B2D25CFDF00B05889 /* RecordingModel.swift */; };
+		02513A0E2D25CFE300B05889 /* RecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02513A0B2D25CFDF00B05889 /* RecordingModel.swift */; };
+		0259448B2D25F0C00009D1C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BF2D24661C004319DC /* Main.storyboard */; };
+		0259448C2D25F0C90009D1C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BF2D24661C004319DC /* Main.storyboard */; };
+		0259448D2D25F0D10009D1C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236A7BF2D24661C004319DC /* Main.storyboard */; };
 		02F218772D246C6700ED5B40 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 02F218762D246C6700ED5B40 /* Podfile */; };
 		02F218782D246C6700ED5B40 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 02F218762D246C6700ED5B40 /* Podfile */; };
 		02F218792D246C6700ED5B40 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 02F218762D246C6700ED5B40 /* Podfile */; };
@@ -80,6 +95,11 @@
 		0236A7DF2D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceraFaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		025139EF2D24733500B05889 /* FaceEditorViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FaceEditorViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		025139F32D24971C00B05889 /* FaceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceNode.swift; sourceTree = "<group>"; };
+		025139F82D25CB6000B05889 /* RecordingGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingGridViewController.swift; sourceTree = "<group>"; };
+		025139F92D25CB6000B05889 /* RecordingGridViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingGridViewController.xib; sourceTree = "<group>"; };
+		02513A012D25CBA100B05889 /* RecordingGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingGridCollectionViewCell.swift; sourceTree = "<group>"; };
+		02513A022D25CBA100B05889 /* RecordingGridCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingGridCollectionViewCell.xib; sourceTree = "<group>"; };
+		02513A0B2D25CFDF00B05889 /* RecordingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingModel.swift; sourceTree = "<group>"; };
 		02617FAA2D2351BA00275543 /* voiceraFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voiceraFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02617FC32D2351BC00275543 /* voiceraFaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voiceraFaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02617FCD2D2351BC00275543 /* voiceraFaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voiceraFaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +175,7 @@
 		0236A7C22D24661C004319DC /* voiceraFace */ = {
 			isa = PBXGroup;
 			children = (
+				025139F72D25CB2800B05889 /* RecordingGridView */,
 				0236A7B92D24661C004319DC /* FaceMoustacheSetView */,
 				0236A7BA2D24661C004319DC /* AppDelegate.swift */,
 				0236A7BB2D24661C004319DC /* Assets.xcassets */,
@@ -182,6 +203,42 @@
 				0236A7DF2D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift */,
 			);
 			path = voiceraFaceUITests;
+			sourceTree = "<group>";
+		};
+		025139F72D25CB2800B05889 /* RecordingGridView */ = {
+			isa = PBXGroup;
+			children = (
+				02513A0A2D25CFD000B05889 /* Model */,
+				02513A092D25CFB900B05889 /* View */,
+			);
+			path = RecordingGridView;
+			sourceTree = "<group>";
+		};
+		02513A002D25CB7700B05889 /* RecordGridCell */ = {
+			isa = PBXGroup;
+			children = (
+				02513A012D25CBA100B05889 /* RecordingGridCollectionViewCell.swift */,
+				02513A022D25CBA100B05889 /* RecordingGridCollectionViewCell.xib */,
+			);
+			path = RecordGridCell;
+			sourceTree = "<group>";
+		};
+		02513A092D25CFB900B05889 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02513A002D25CB7700B05889 /* RecordGridCell */,
+				025139F82D25CB6000B05889 /* RecordingGridViewController.swift */,
+				025139F92D25CB6000B05889 /* RecordingGridViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02513A0A2D25CFD000B05889 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02513A0B2D25CFDF00B05889 /* RecordingModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		02617FA12D2351BA00275543 = {
@@ -241,6 +298,7 @@
 				02617FA62D2351BA00275543 /* Sources */,
 				02617FA72D2351BA00275543 /* Frameworks */,
 				02617FA82D2351BA00275543 /* Resources */,
+				D958E3BD1E09F3BFAC1586DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,6 +336,7 @@
 				02617FC92D2351BC00275543 /* Sources */,
 				02617FCA2D2351BC00275543 /* Frameworks */,
 				02617FCB2D2351BC00275543 /* Resources */,
+				058C1F1D04EB30974294E109 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,12 +396,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0259448C2D25F0C90009D1C6 /* Main.storyboard in Resources */,
 				02F218782D246C6700ED5B40 /* Podfile in Resources */,
 				0236A7C92D24661C004319DC /* FaceEditorCollectionViewCell.xib in Resources */,
 				0236A7CA2D24661C004319DC /* FaceEditorViewController.xib in Resources */,
 				0236A7CB2D24661C004319DC /* Assets.xcassets in Resources */,
 				0236A7CD2D24661C004319DC /* LaunchScreen.storyboard in Resources */,
-				0236A7CE2D24661C004319DC /* Main.storyboard in Resources */,
+				02513A032D25CBA100B05889 /* RecordingGridCollectionViewCell.xib in Resources */,
+				025139FA2D25CB6000B05889 /* RecordingGridViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,10 +411,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0259448B2D25F0C00009D1C6 /* Main.storyboard in Resources */,
 				02F218792D246C6700ED5B40 /* Podfile in Resources */,
-				0236A7CF2D24661C004319DC /* Main.storyboard in Resources */,
 				0236A7D02D24661C004319DC /* Assets.xcassets in Resources */,
 				0236A7D12D24661C004319DC /* FaceEditorViewController.xib in Resources */,
+				025139FF2D25CB6000B05889 /* RecordingGridViewController.xib in Resources */,
+				02513A052D25CBA100B05889 /* RecordingGridCollectionViewCell.xib in Resources */,
 				0236A7D22D24661C004319DC /* FaceEditorCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,10 +425,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0259448D2D25F0D10009D1C6 /* Main.storyboard in Resources */,
 				02F218772D246C6700ED5B40 /* Podfile in Resources */,
-				0236A7D72D24661C004319DC /* Main.storyboard in Resources */,
 				0236A7D82D24661C004319DC /* Assets.xcassets in Resources */,
 				0236A7D92D24661C004319DC /* FaceEditorViewController.xib in Resources */,
+				025139FC2D25CB6000B05889 /* RecordingGridViewController.xib in Resources */,
+				02513A072D25CBA100B05889 /* RecordingGridCollectionViewCell.xib in Resources */,
 				0236A7DA2D24661C004319DC /* FaceEditorCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +438,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		058C1F1D04EB30974294E109 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voiceraFace-voiceraFaceUITests/Pods-voiceraFace-voiceraFaceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voiceraFace-voiceraFaceUITests/Pods-voiceraFace-voiceraFaceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voiceraFace-voiceraFaceUITests/Pods-voiceraFace-voiceraFaceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2A20BBFF1988E18E746EDE2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -439,6 +521,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D958E3BD1E09F3BFAC1586DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voiceraFace/Pods-voiceraFace-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voiceraFace/Pods-voiceraFace-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voiceraFace/Pods-voiceraFace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -448,11 +547,14 @@
 			files = (
 				0236A7C42D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */,
 				025139F22D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */,
+				025139FB2D25CB6000B05889 /* RecordingGridViewController.swift in Sources */,
 				0236A7C52D24661C004319DC /* FaceEditorViewController.swift in Sources */,
 				0236A7C62D24661C004319DC /* AppDelegate.swift in Sources */,
 				0236A7C72D24661C004319DC /* SceneDelegate.swift in Sources */,
 				0236A7C82D24661C004319DC /* voiceraFace.xcdatamodeld in Sources */,
+				02513A042D25CBA100B05889 /* RecordingGridCollectionViewCell.swift in Sources */,
 				025139F52D24972000B05889 /* FaceNode.swift in Sources */,
+				02513A0C2D25CFE300B05889 /* RecordingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +566,9 @@
 				0236A7D42D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */,
 				0236A7DD2D246625004319DC /* voiceraFaceTests.swift in Sources */,
 				025139F42D24972000B05889 /* FaceNode.swift in Sources */,
+				02513A062D25CBA100B05889 /* RecordingGridCollectionViewCell.swift in Sources */,
+				02513A0D2D25CFE300B05889 /* RecordingModel.swift in Sources */,
+				025139FE2D25CB6000B05889 /* RecordingGridViewController.swift in Sources */,
 				025139F12D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,8 +579,11 @@
 			files = (
 				0236A7D52D24661C004319DC /* FaceEditorViewController.swift in Sources */,
 				0236A7D62D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */,
+				02513A0E2D25CFE300B05889 /* RecordingModel.swift in Sources */,
+				02513A082D25CBA100B05889 /* RecordingGridCollectionViewCell.swift in Sources */,
 				025139F62D24972000B05889 /* FaceNode.swift in Sources */,
 				025139F02D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */,
+				025139FD2D25CB6000B05889 /* RecordingGridViewController.swift in Sources */,
 				0236A7E12D24662A004319DC /* voiceraFaceUITests.swift in Sources */,
 				0236A7E22D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift in Sources */,
 			);
@@ -605,7 +713,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -668,7 +776,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

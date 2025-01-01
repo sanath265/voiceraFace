@@ -6,6 +6,7 @@ target 'voiceraFace' do
   use_frameworks!
 
   # Pods for voiceraFace
+  pod 'ARVideoKit', '~> 1.5.51'
 
   target 'voiceraFaceTests' do
     inherit! :search_paths

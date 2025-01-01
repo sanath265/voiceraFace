@@ -1,18 +1,18 @@
 import UIKit
-import AVFoundation
 import ARKit
+import ARVideoKit
+import CoreData
 
 class FaceEditorViewController: UIViewController {
     
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
     private var mustacheImages: [String] = [ "mustache1",
                                              "mustache2",
                                              "mustache3" ]
     let features = ["mustache"]
     var featureIndices = [[6]]
     private var selectedMustacheIndex = 0
-    private var captureSession: AVCaptureSession!
-    private var videoPreviewLayer: AVCaptureVideoPreviewLayer!
-    private var movieOutput: AVCaptureMovieFileOutput!
     private var isRecording = false
     private var isUsingFrontCamera = true
     private var recordingTimer: Timer?
@@ -20,6 +20,7 @@ class FaceEditorViewController: UIViewController {
     private var arSession: ARSession!
     private var arAnchor: ARFaceAnchor!
     private var mustacheNode: SCNNode?
+    private var recordAR: RecordAR?
     
     
     @IBOutlet weak private var sceneView: ARSCNView!
@@ -63,33 +64,26 @@ class FaceEditorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setupRecordingSession()
         setupUI()
         sceneView.delegate = self
+        recordAR = RecordAR(ARSceneKit: sceneView)
+        recordAR?.enableAudio = true
+        let configuration = ARWorldTrackingConfiguration()
+        recordAR?.prepare(configuration)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        DispatchQueue.global(qos: .background).async { [weak self] in
-//            
-//            if let self,
-//               let captureSession = self.captureSession,
-//               captureSession.isRunning == false {
-//                self.captureSession.startRunning()
-//            }
-//        }
         setupFaceTracking()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        captureSession.stopRunning()
         sceneView.session.pause()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        videoPreviewLayer?.frame = sceneView.bounds
     }
     
     private func setupUI() {
@@ -128,76 +122,105 @@ extension FaceEditorViewController: UICollectionViewDataSource, UICollectionView
 
 extension FaceEditorViewController: AVCaptureFileOutputRecordingDelegate {
     
-    private func setupRecordingSession() {
-        captureSession = AVCaptureSession()
-        
-        // Camera input
-        guard let videoDevice = AVCaptureDevice.default(for: .video) else { return }
-        do {
-            let videoInput = try AVCaptureDeviceInput(device: videoDevice)
-            if captureSession.canAddInput(videoInput) {
-                captureSession.addInput(videoInput)
-            }
-        } catch {
-            print("Failed to create video input: \(error)")
-            return
-        }
-        
-        // Audio input
-        guard let audioDevice = AVCaptureDevice.default(for: .audio) else { return }
-        do {
-            let audioInput = try AVCaptureDeviceInput(device: audioDevice)
-            if captureSession.canAddInput(audioInput) {
-                captureSession.addInput(audioInput)
-            }
-        } catch {
-            print("Failed to create audio input: \(error)")
-            return
-        }
-        
-        // Video and Audio outputs
-        movieOutput = AVCaptureMovieFileOutput()
-        if captureSession.canAddOutput(movieOutput) {
-            captureSession.addOutput(movieOutput)
-        }
-        
-        videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession!)
-        if let videoPreviewLayer {
-            videoPreviewLayer.frame = sceneView.frame
-            videoPreviewLayer.videoGravity = .resizeAspectFill
-            sceneView.layer.addSublayer(videoPreviewLayer)
-        }
-    }
-    
     @objc private func startRecording(_ sender: UITapGestureRecognizer) {
         if isRecording {
             stopRecording()
         } else {
-            let filePath = NSTemporaryDirectory().appending("video-\(Date()).mov")
-            let outputURL = URL(fileURLWithPath: filePath)
-            
-            DispatchQueue.global(qos: .background).async {
-                if !self.captureSession.isRunning {
-                    self.captureSession.startRunning()
-                }
-                
-                DispatchQueue.main.async {
-                    self.movieOutput.startRecording(to: outputURL, recordingDelegate: self)
-                    self.isRecording = true
-                    self.recordingDuration = 0 // Reset the duration
-                    self.startTimer()
-                    self.updateUIForRecording()
-                }
+            DispatchQueue.main.async {
+                self.recordAR?.record()
+                self.isRecording = true
+                self.recordingDuration = 0
+                self.startTimer()
+                self.updateUIForRecording()
             }
         }
     }
     
     private func stopRecording() {
-        movieOutput.stopRecording()
-        isRecording = false
-        stopTimer()
-        updateUIForStopped()
+        recordAR?.stopAndExport { [weak self] videoPath, permissionStatus, exported in
+            guard let self = self else { return }
+            
+            if exported {
+                self.generateThumbnail(for: videoPath) { thumbnail in
+                    self.showTagPopup(for: videoPath, thumbnail: thumbnail)
+                }
+            } else {
+                print("Failed to export video")
+            }
+        }
+        self.isRecording = false
+        self.stopTimer()
+        self.updateUIForStopped()
     }
+
+    private func generateThumbnail(for videoPath: URL, completion: @escaping (UIImage) -> Void) {
+        let url = videoPath
+        let asset = AVAsset(url: url)
+        let imageGenerator = AVAssetImageGenerator(asset: asset)
+        imageGenerator.appliesPreferredTrackTransform = true
+        
+        DispatchQueue.global().async {
+            if let cgImage = try? imageGenerator.copyCGImage(at: CMTime(seconds: 1, preferredTimescale: 600), actualTime: nil) {
+                let thumbnail = UIImage(cgImage: cgImage)
+                DispatchQueue.main.async {
+                    completion(thumbnail)
+                }
+            } else {
+                DispatchQueue.main.async {
+                    completion(UIImage(systemName: "video") ?? UIImage())
+                }
+            }
+        }
+    }
+
+    private func showTagPopup(for videoPath: URL, thumbnail: UIImage) {
+        let alertController = UIAlertController(title: "Enter Tag", message: "Add a tag for this recording.", preferredStyle: .alert)
+        
+        alertController.addTextField { textField in
+            textField.placeholder = "Tag name"
+        }
+        
+        let saveAction = UIAlertAction(title: "Save", style: .default) { [weak self] _ in
+            guard let self = self,
+                  let tag = alertController.textFields?.first?.text,
+                  !tag.isEmpty else { return }
+            
+            let duration = self.formatDuration(self.recordingDuration)
+            let newRecording = NSEntityDescription.insertNewObject(forEntityName: "Recordings", into: context)
+
+                // Save videoPath as String
+                newRecording.setValue(videoPath.absoluteString, forKey: "videoPath")
+
+                // Save thumbnail as Data
+                let imageData = thumbnail.pngData()
+                newRecording.setValue(imageData, forKey: "thumbnail")
+
+                // Save duration and tag as String
+                newRecording.setValue(duration, forKey: "duration")
+                newRecording.setValue(tag, forKey: "tag")
+            do {
+                try context.save()
+                print("Recording saved to Core Data")
+            } catch {
+                print("Error saving recording: \(error.localizedDescription)")
+            }
+            print("Recording saved with tag: \(tag)")
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+
+    private func formatDuration(_ duration: Int) -> String {
+        let minutes = duration / 60
+        let seconds = duration % 60
+        return String(format: "%02d:%02d", minutes, seconds)
+    }
+
     
     private func startTimer() {
         recordingTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateRecordingTime), userInfo: nil, repeats: true)
@@ -224,31 +247,16 @@ extension FaceEditorViewController: AVCaptureFileOutputRecordingDelegate {
     }
     
     func updateUIForStopped() {
-        recordImage.image = UIImage(systemName: "record.circle.fill")?.withRenderingMode(.alwaysTemplate)
-        recordImage.tintColor = .white
-        rotateCameraImage.isHidden = false
+        DispatchQueue.main.async {
+            self.recordImage.image = UIImage(systemName: "record.circle.fill")?.withRenderingMode(.alwaysTemplate)
+            self.recordImage.tintColor = .white
+            self.rotateCameraImage.isHidden = false
+        }
     }
     
     @objc private func toggleCamera(_ sender: UITapGestureRecognizer) {
-        guard let currentInput = captureSession.inputs.first as? AVCaptureDeviceInput else { return }
-        
-        captureSession.beginConfiguration()
-        defer { captureSession.commitConfiguration() }
-        
-        captureSession.removeInput(currentInput)
-        
-        let newCameraDevice: AVCaptureDevice?
-        if currentInput.device.position == .back {
-            newCameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front)
-        } else {
-            newCameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
-        }
-        
-        guard let newDevice = newCameraDevice,
-              let newInput = try? AVCaptureDeviceInput(device: newDevice),
-              captureSession.canAddInput(newInput) else { return }
-        
-        captureSession.addInput(newInput)
+        let secondViewController = RecordingGridViewController()
+        present(secondViewController, animated: true, completion: nil)
     }
     
     func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
