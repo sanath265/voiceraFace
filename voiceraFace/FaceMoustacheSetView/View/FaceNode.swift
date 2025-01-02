@@ -11,12 +11,15 @@ class FaceNode: SCNNode {
     var options: [String]
     var index = 0
     
-    init(with options: [String], width: CGFloat = 0.08, height: CGFloat = 0.08) {
+    init(with options: [String],
+         width: CGFloat = 0.08,
+         height: CGFloat = 0.08) {
         self.options = options
         
         super.init()
         
-        let plane = SCNPlane(width: width, height: height)
+        let plane = SCNPlane(width: width,
+                             height: height)
         plane.firstMaterial?.diffuse.contents =  UIImage(named: options.first!)
         plane.firstMaterial?.isDoubleSided = true
         

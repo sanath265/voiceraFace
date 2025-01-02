@@ -12,10 +12,3 @@ struct Recording {
     let duration: String
     let tag: String
 }
-
-class RecordingDataStore {
-    static let shared = RecordingDataStore()
-    private init() {}
-    
-    var recordings: [Recording] = []
-}

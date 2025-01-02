@@ -17,17 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voicera" translatesAutoresizingMaskIntoConstraints="NO" id="hA2-eq-pLR">
-                                <rect key="frame" x="101" y="334" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hA2-eq-pLR">
+                                <rect key="frame" x="-4" y="0.0" width="401" height="852"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hA2-eq-pLR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="2C8-u9-POH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hA2-eq-pLR" secondAttribute="trailing" id="AO5-3L-bJG"/>
-                            <constraint firstItem="hA2-eq-pLR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Yg7-RS-Lck"/>
-                            <constraint firstItem="hA2-eq-pLR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="toR-Ox-Pq0"/>
+                            <constraint firstItem="hA2-eq-pLR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="2C8-u9-POH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hA2-eq-pLR" secondAttribute="trailing" constant="-20" id="AO5-3L-bJG"/>
+                            <constraint firstItem="hA2-eq-pLR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="GDU-EK-SwJ"/>
+                            <constraint firstAttribute="bottom" secondItem="hA2-eq-pLR" secondAttribute="bottom" id="h7u-Yi-B46"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="voicera" width="376" height="130"/>
+        <image name="AppLogo" width="376" height="130"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

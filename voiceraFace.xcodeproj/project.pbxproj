@@ -29,9 +29,6 @@
 		0236A7DD2D246625004319DC /* voiceraFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7DB2D246625004319DC /* voiceraFaceTests.swift */; };
 		0236A7E12D24662A004319DC /* voiceraFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7DE2D24662A004319DC /* voiceraFaceUITests.swift */; };
 		0236A7E22D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0236A7DF2D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift */; };
-		025139F02D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139EF2D24733500B05889 /* FaceEditorViewController+CollectionView.swift */; };
-		025139F12D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139EF2D24733500B05889 /* FaceEditorViewController+CollectionView.swift */; };
-		025139F22D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139EF2D24733500B05889 /* FaceEditorViewController+CollectionView.swift */; };
 		025139F42D24972000B05889 /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F32D24971C00B05889 /* FaceNode.swift */; };
 		025139F52D24972000B05889 /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F32D24971C00B05889 /* FaceNode.swift */; };
 		025139F62D24972000B05889 /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025139F32D24971C00B05889 /* FaceNode.swift */; };
@@ -93,7 +90,6 @@
 		0236A7DB2D246625004319DC /* voiceraFaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceraFaceTests.swift; sourceTree = "<group>"; };
 		0236A7DE2D24662A004319DC /* voiceraFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceraFaceUITests.swift; sourceTree = "<group>"; };
 		0236A7DF2D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceraFaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		025139EF2D24733500B05889 /* FaceEditorViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FaceEditorViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		025139F32D24971C00B05889 /* FaceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceNode.swift; sourceTree = "<group>"; };
 		025139F82D25CB6000B05889 /* RecordingGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingGridViewController.swift; sourceTree = "<group>"; };
 		025139F92D25CB6000B05889 /* RecordingGridViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingGridViewController.xib; sourceTree = "<group>"; };
@@ -159,7 +155,6 @@
 				0236A7B52D24661C004319DC /* CollectionViewCells */,
 				0236A7B62D24661C004319DC /* FaceEditorViewController.swift */,
 				0236A7B72D24661C004319DC /* FaceEditorViewController.xib */,
-				025139EF2D24733500B05889 /* FaceEditorViewController+CollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -546,7 +541,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0236A7C42D24661C004319DC /* FaceEditorCollectionViewCell.swift in Sources */,
-				025139F22D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */,
 				025139FB2D25CB6000B05889 /* RecordingGridViewController.swift in Sources */,
 				0236A7C52D24661C004319DC /* FaceEditorViewController.swift in Sources */,
 				0236A7C62D24661C004319DC /* AppDelegate.swift in Sources */,
@@ -569,7 +563,6 @@
 				02513A062D25CBA100B05889 /* RecordingGridCollectionViewCell.swift in Sources */,
 				02513A0D2D25CFE300B05889 /* RecordingModel.swift in Sources */,
 				025139FE2D25CB6000B05889 /* RecordingGridViewController.swift in Sources */,
-				025139F12D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +575,6 @@
 				02513A0E2D25CFE300B05889 /* RecordingModel.swift in Sources */,
 				02513A082D25CBA100B05889 /* RecordingGridCollectionViewCell.swift in Sources */,
 				025139F62D24972000B05889 /* FaceNode.swift in Sources */,
-				025139F02D24733500B05889 /* FaceEditorViewController+CollectionView.swift in Sources */,
 				025139FD2D25CB6000B05889 /* RecordingGridViewController.swift in Sources */,
 				0236A7E12D24662A004319DC /* voiceraFaceUITests.swift in Sources */,
 				0236A7E22D24662A004319DC /* voiceraFaceUITestsLaunchTests.swift in Sources */,
